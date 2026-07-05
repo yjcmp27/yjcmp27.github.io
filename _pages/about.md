@@ -32,6 +32,8 @@ My research focuses on Riemannian geometry and geometric relativity, Yang--Mills
 
 ## Contact
 
-Email: [yjcmp@mail.ustc.edu.cn](mailto:yjcmp@mail.ustc.edu.cn)
-
-arXiv: [Jiangcheng You](https://arxiv.org/search/?query=Jiangcheng+You&searchtype=author)
+- Email: [yjcmp@mail.ustc.edu.cn](mailto:yjcmp@mail.ustc.edu.cn), [youjiangchengmp@163.com](mailto:youjiangchengmp@163.com), [yjcmp27@gmail.com](mailto:yjcmp27@gmail.com)
+- arXiv: [Jiangcheng You](https://arxiv.org/search/?query=Jiangcheng+You&searchtype=author)
+- ResearchGate: [Jiangcheng You](https://www.researchgate.net/profile/Jiangcheng-You/research)
+- Zhihu: [尤江城](https://www.zhihu.com/people/you-jiang-cheng-35)
+- Xiaohongshu: [尤江城](https://www.xiaohongshu.com/user/profile/6636fe6c0000000007004b38)
