@@ -7,7 +7,7 @@ subtitle: Ph.D. student in Mathematics, University of Science and Technology of 
 profile: false
 
 selected_papers: false
-social: true
+social: false
 
 announcements:
   enabled: false
