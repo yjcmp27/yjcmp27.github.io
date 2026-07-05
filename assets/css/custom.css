@@ -1,0 +1,39 @@
+/* Global font override */
+html,
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Main text, headings, navbar, lists, links */
+body,
+p,
+li,
+a,
+span,
+div,
+article,
+section,
+main,
+nav,
+.navbar,
+.navbar-brand,
+.nav-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Keep code blocks readable */
+code,
+pre,
+kbd,
+samp {
+  font-family: "Courier New", Courier, monospace !important;
+}
