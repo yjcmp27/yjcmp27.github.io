@@ -15,4 +15,4 @@ nav_order: 4
 
 - **Gromov's Euclidean Endpoint $C^0$ Rigidity for the Positive Mass Theorem**  
   Geometry and Topology Seminar, Yau Mathematical Sciences Center, Tsinghua University, June 30, 2026.  
-  [Announcement](https://geometry-topology.github.io/) · [Slides](/assets/pdf/gromov_rigidity_conjecture.pdf)
+  [Announcement](https://geometry-topology.github.io/) · [Slides]({{ '/assets/pdf/gromov_rigidity_conjecture.pdf' | relative_url }})
