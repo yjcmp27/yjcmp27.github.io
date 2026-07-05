@@ -3,7 +3,7 @@ layout: page
 title: Notes
 permalink: /notes/
 description: Notes on geometry, geometric analysis, gauge theory, and spectral geometry.
-nav: false
+nav: true
 nav_order: 2
 pagination:
   enabled: true
