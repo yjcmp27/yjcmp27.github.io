@@ -15,13 +15,14 @@ pagination:
 }
 
 .notes-list .note-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
 }
 
+/* Make note titles visually consistent with Publications and Talks */
 .notes-list .note-title {
-  font-size: 1.35rem;
-  line-height: 1.35;
-  font-weight: 500;
+  font-size: 1.08rem;
+  line-height: 1.4;
+  font-weight: 400;
   margin-bottom: 0.35rem;
 }
 
@@ -35,15 +36,20 @@ pagination:
   text-decoration: none;
 }
 
+/* Description style */
 .notes-list .note-description {
   font-size: 1rem;
   line-height: 1.45;
+  font-weight: 400;
   margin-bottom: 0.45rem;
   color: var(--global-text-color);
 }
 
+/* Date style */
 .notes-list .note-date {
   font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 400;
   color: var(--global-text-color-light);
   margin-bottom: 0;
 }
