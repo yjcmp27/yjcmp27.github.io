@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching Assistant / Seminar
+title: TA / Seminar
 description: Course materials, schedules, and resources for classes taught.
 nav: true
 nav_order: 6
