@@ -13,9 +13,9 @@ nav_order: 1
   }
 
   /* Hide the duplicated first About in the navbar */
-  .navbar-brand,
-  nav.navbar a.navbar-brand,
-  nav.navbar .navbar-nav > .nav-item:first-child {
+  nav.navbar .navbar-brand,
+  nav.navbar ul.navbar-nav > li:first-of-type,
+  nav.navbar .navbar-nav > .nav-item:first-of-type {
     display: none !important;
   }
 
@@ -37,10 +37,14 @@ nav_order: 1
   .home-top {
     display: grid;
     grid-template-columns: 330px minmax(0, 1fr);
-    column-gap: 10rem;
+    column-gap: 0;
     align-items: start;
     margin-top: 1.5rem;
     margin-bottom: 4rem;
+  }
+
+  .home-photo-box {
+    width: 330px;
   }
 
   .home-photo {
@@ -53,6 +57,8 @@ nav_order: 1
     font-size: 1rem;
     line-height: 1.6;
     padding-top: 1rem;
+    padding-left: 9rem;
+    max-width: 720px;
   }
 
   .home-bottom {
@@ -71,8 +77,12 @@ nav_order: 1
       display: block;
     }
 
-    .home-photo {
+    .home-photo-box {
       margin-bottom: 2rem;
+    }
+
+    .home-intro {
+      padding-left: 0;
     }
 
     .home-bottom {
