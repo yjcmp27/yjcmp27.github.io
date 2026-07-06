@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Harmonic Map and PDE"
-date: 2026-07-05
+date: 2024-10-17
 description: "Personal notes on harmonic maps, PDE techniques, variational methods, epsilon-regularity, removable singularities, energy identity, and bubble trees."
 tags: notes harmonic-maps PDE geometric-analysis
 categories: notes
