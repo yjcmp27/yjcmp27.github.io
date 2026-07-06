@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /
 subtitle:
-nav: true
+nav: flase
 nav_order: 1
 ---
 
