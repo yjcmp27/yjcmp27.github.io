@@ -10,15 +10,32 @@ pagination:
 ---
 
 <style>
-/* Notes page based on blog posts */
-
-/* Whole list */
 .notes-list {
   margin-top: 2rem;
 }
 
-/* Each item */
-/* Note description: normal weight */
+.notes-list .note-item {
+  margin-bottom: 1.55rem !important;
+}
+
+/* Note title: black, normally bold, keep current size */
+.notes-list .note-title,
+.notes-list .note-title a {
+  font-size: 1.08rem !important;
+  line-height: 1.4 !important;
+  font-weight: 600 !important;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  margin: 0 0 0.35rem 0 !important;
+}
+
+/* Keep title black also when hovering */
+.notes-list .note-title a:hover {
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+}
+
+/* Note description: black, normal weight, NOT bold */
 .notes-list .note-description,
 .notes-list .note-description p,
 .notes-list .note-description strong,
@@ -30,22 +47,7 @@ pagination:
   margin: 0 0 0.4rem 0 !important;
 }
 
-/* Hover */
-.notes-list .note-title a:hover {
-  color: var(--global-theme-color) !important;
-  text-decoration: none !important;
-}
-
-/* Description */
-.notes-list .note-description {
-  font-size: 1rem !important;
-  line-height: 1.45 !important;
-  font-weight: 400 !important;
-  color: var(--global-text-color) !important;
-  margin: 0 0 0.4rem 0 !important;
-}
-
-/* Date */
+/* Note date */
 .notes-list .note-date {
   font-size: 0.95rem !important;
   line-height: 1.35 !important;
