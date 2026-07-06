@@ -12,14 +12,12 @@ nav_order: 1
     display: none;
   }
 
-  .navbar .nav-link,
-  .navbar .nav-link.active,
-  .navbar .nav-item.active .nav-link {
+  nav.navbar .navbar-nav .nav-item .nav-link,
+  nav.navbar .navbar-nav .nav-item .nav-link.active,
+  nav.navbar .navbar-nav .nav-item.active .nav-link,
+  nav.navbar .navbar-nav .nav-link:hover,
+  nav.navbar .navbar-brand {
     color: #222 !important;
-  }
-
-  .navbar .nav-link:hover {
-    color: #555 !important;
   }
 
   .home-name {
@@ -31,9 +29,9 @@ nav_order: 1
   .home-top {
     display: flex;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 5rem;
     margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 
   .home-photo-box {
@@ -50,11 +48,12 @@ nav_order: 1
     flex: 1;
     font-size: 1rem;
     line-height: 1.6;
+    padding-top: 0.2rem;
   }
 
   .home-bottom {
     display: flex;
-    gap: 5rem;
+    gap: 6rem;
     margin-top: 2rem;
   }
 
@@ -90,10 +89,6 @@ nav_order: 1
   </div>
 
   <div class="home-intro">
-    <p>
-      
-    </p>
-
     <p>
       I am a Ph.D. student in mathematics at the University of Science and Technology of China.
     </p>
