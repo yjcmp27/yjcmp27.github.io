@@ -37,3 +37,20 @@ kbd,
 samp {
   font-family: "Courier New", Courier, monospace !important;
 }
+
+/* Hide the duplicated active About item in the navbar */
+nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href="/homepage-test/"]),
+nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test/"]),
+nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
+  display: none !important;
+}
+
+/* Make navbar links black instead of purple */
+nav.navbar .navbar-nav .nav-item .nav-link,
+nav.navbar .navbar-nav .nav-item .nav-link.active,
+nav.navbar .navbar-nav .nav-item.active .nav-link,
+nav.navbar .navbar-nav .nav-link:hover,
+nav.navbar .navbar-nav .nav-link:visited,
+nav.navbar .navbar-brand {
+  color: #222 !important;
+}
