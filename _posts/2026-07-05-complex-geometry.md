@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Differential Geometry of Complex Vector Bundles"
-date: 2026-07-05
+date: 2024-12-15
 description: "Notes on the differential geometry of complex vector bundles, Chern connections, curvature, Chern classes, and Hermitian--Yang--Mills connections."
 tags: notes complex-vector-bundles differential-geometry chern-connections curvature chern-classes hermitian-yang-mills
 categories: notes
