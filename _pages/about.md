@@ -12,8 +12,10 @@ nav_order: 1
     display: none;
   }
 
-  /* Hide the extra site title on the left of the navbar */
-  .navbar-brand {
+  /* Hide the duplicated first About in the navbar */
+  .navbar-brand,
+  nav.navbar a.navbar-brand,
+  nav.navbar .navbar-nav > .nav-item:first-child {
     display: none !important;
   }
 
@@ -28,20 +30,17 @@ nav_order: 1
 
   .home-name {
     margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-size: 2.8rem;
   }
 
   .home-top {
-    display: flex;
-    align-items: flex-start;
-    gap: 9rem;
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    column-gap: 10rem;
+    align-items: start;
     margin-top: 1.5rem;
-    margin-bottom: 3.5rem;
-  }
-
-  .home-photo-box {
-    flex: 0 0 330px;
+    margin-bottom: 4rem;
   }
 
   .home-photo {
@@ -51,32 +50,28 @@ nav_order: 1
   }
 
   .home-intro {
-    flex: 1;
     font-size: 1rem;
     line-height: 1.6;
-    padding-top: 0.2rem;
+    padding-top: 1rem;
   }
 
   .home-bottom {
-    display: flex;
-    gap: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
     margin-top: 2rem;
-  }
-
-  .home-section {
-    flex: 1;
   }
 
   .home-section h2 {
     margin-bottom: 1rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .home-top {
       display: block;
     }
 
-    .home-photo-box {
+    .home-photo {
       margin-bottom: 2rem;
     }
 
