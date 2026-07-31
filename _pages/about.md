@@ -145,18 +145,22 @@ nav_order: 1
         <a href="mailto:youjiangchengmp@163.com">youjiangchengmp@163.com</a>,
         <a href="mailto:yjcmp27@gmail.com">yjcmp27@gmail.com</a>
       </li>
+
       <li>
         arXiv:
         <a href="https://arxiv.org/search/?query=Jiangcheng+You&searchtype=author">Jiangcheng You</a>
       </li>
+
       <li>
         ResearchGate:
         <a href="https://www.researchgate.net/profile/Jiangcheng-You">Jiangcheng You</a>
       </li>
+
       <li>
         Zhihu:
-        <a href="https://www.zhihu.com/people/you-jiang-cheng">尤江城</a>
+        <a href="https://www.zhihu.com/people/you-jiang-cheng-35">尤江城</a>
       </li>
+
       <li>
         Xiaohongshu:
         <a href="https://www.xiaohongshu.com/user/profile/6636fe6c0000000007004b38">尤江城</a>
