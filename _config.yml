@@ -1,12 +1,12 @@
-title: blank
-first_name: Jiangcheng You
+title: Jiangcheng You
+first_name: Jiangcheng
 middle_name:
-last_name: ""
-description: Academic homepage of Jiangcheng You
+last_name: You
+description: Academic homepage of Jiangcheng You, a Ph.D. student at the University of Science and Technology of China working in differential geometry and geometric analysis.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website
+keywords: Jiangcheng You, You Jiangcheng, 尤江城, differential geometry, geometric analysis, scalar curvature, geometric relativity, gauge theory, USTC
 lang: en
 icon: 💠
 
@@ -78,8 +78,8 @@ max_width: 930px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 
-serve_og_meta: false
-serve_schema_org: false
+serve_og_meta: true
+serve_schema_org: true
 og_image:
 
 # -----------------------------------------------------------------------------
