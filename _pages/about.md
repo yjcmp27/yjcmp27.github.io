@@ -88,8 +88,7 @@ nav_order: 1
     </p>
 
     <p>
-      My research focuses on Riemannian geometry and geometric relativity, Yang--Mills theory and gauge theory, and spectral geometry. I am particularly interested in geometric and analytic problems related to metrics and curvature, mathematical aspects of general relativity, and gauge-theoretic objects arising from physics, such as instantons and monopoles.
-    </p>
+      My current research interests include: Scalar Curvature in Riemannian geometry (rigidity, stability, and related topological constraints); Geometric Relativity (initial data sets, positive energy, and spacetime geometry); Yang-Mills Theory and broader Gauge Theories (moduli spaces, connections, and geometric PDEs).
   </div>
 
 </div>
@@ -102,7 +101,6 @@ nav_order: 1
     <ul>
       <li>Riemannian geometry and geometric relativity</li>
       <li>Yang--Mills equation and gauge theory</li>
-      <li>Spectral geometry</li>
     </ul>
   </div>
 
