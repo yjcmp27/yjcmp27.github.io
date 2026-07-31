@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jiangcheng You
-description: Jiangcheng You is a Ph.D. student at the University of Science and Technology of China working in differential geometry and geometric analysis.
+description: Jiangcheng You is a Ph.D. student in mathematics at the University of Science and Technology of China, working in differential geometry and geometric analysis.
 permalink: /
 subtitle:
 nav: false
@@ -118,7 +118,7 @@ nav_order: 1
     </p>
 
     <p>
-      My current research interests include: Scalar Curvature in Riemannian geometry (rigidity, stability, and related topological constraints); Geometric Relativity (initial data sets, positive energy, and spacetime geometry); Yang-Mills Theory and broader Gauge Theories (moduli spaces, connections, and geometric PDEs).
+      My current research focuses on scalar curvature in Riemannian geometry and geometric relativity. I am particularly interested in rigidity, stability, and topological constraints arising from curvature conditions, as well as initial data sets, positive energy, and spacetime geometry. I am also interested in Yang–Mills theory and gauge theory, especially connections, moduli spaces, and geometric partial differential equations.
     </p>
   </div>
 
@@ -170,3 +170,46 @@ nav_order: 1
   </div>
 
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://yjcmp27.github.io/",
+  "name": "Jiangcheng You",
+  "description": "Academic homepage of Jiangcheng You, a Ph.D. student in mathematics at the University of Science and Technology of China working in differential geometry and geometric analysis.",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Jiangcheng You",
+    "alternateName": [
+      "You Jiangcheng",
+      "尤江城"
+    ],
+    "url": "https://yjcmp27.github.io/",
+    "email": "mailto:yjcmp@mail.ustc.edu.cn",
+    "jobTitle": "Ph.D. Student in Mathematics",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Science and Technology of China",
+      "alternateName": "USTC",
+      "url": "https://www.ustc.edu.cn/"
+    },
+    "knowsAbout": [
+      "Differential geometry",
+      "Geometric analysis",
+      "Riemannian geometry",
+      "Scalar curvature",
+      "Geometric relativity",
+      "Yang–Mills theory",
+      "Gauge theory",
+      "Geometric partial differential equations"
+    ],
+    "sameAs": [
+      "https://arxiv.org/search/?query=Jiangcheng+You&searchtype=author",
+      "https://www.researchgate.net/profile/Jiangcheng-You",
+      "https://www.zhihu.com/people/you-jiang-cheng-35",
+      "https://www.xiaohongshu.com/user/profile/6636fe6c0000000007004b38"
+    ]
+  }
+}
+</script>
