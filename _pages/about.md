@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: Jiangcheng You
+description: Jiangcheng You is a Ph.D. student at the University of Science and Technology of China working in differential geometry and geometric analysis.
 permalink: /
 subtitle:
 nav: false
