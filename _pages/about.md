@@ -117,7 +117,7 @@ nav_order: 1
     </p>
 
     <p>
-      My current work focuses primarily on scalar curvature in Riemannian geometry and geometric relativity. I am particularly interested in rigidity, stability, and topological constraints under curvature conditions, as well as initial data sets, positive energy, and spacetime geometry. I am also interested in Yang–Mills theory and gauge theory, especially connections, moduli spaces, and geometric PDEs, together with problems in spectral geometry.
+      My current research interests include: Scalar Curvature in Riemannian geometry (rigidity, stability, and related topological constraints); Geometric Relativity (initial data sets, positive energy, and spacetime geometry); Yang-Mills Theory and broader Gauge Theories (moduli spaces, connections, and geometric PDEs).
     </p>
   </div>
 
@@ -132,7 +132,6 @@ nav_order: 1
       <li>Scalar curvature and Riemannian geometry</li>
       <li>Geometric relativity</li>
       <li>Yang–Mills theory and gauge theory</li>
-      <li>Spectral geometry</li>
     </ul>
   </div>
 
