@@ -1,1 +1,1 @@
-Sitemap: https://yjcmp27.github.io/homepage-test/sitemap.xml
+Sitemap: https://yjcmp27.github.io/sitemap.xml
