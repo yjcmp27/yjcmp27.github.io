@@ -21,7 +21,7 @@ nav_order: 1
   .home-top {
     display: grid;
     grid-template-columns: 330px minmax(0, 1fr);
-    column-gap: 8.5rem;
+    column-gap: clamp(3rem, 8vw, 8.5rem);
     align-items: start;
     margin-top: 1.5rem;
     margin-bottom: 4rem;
@@ -29,30 +29,50 @@ nav_order: 1
 
   .home-photo-box {
     width: 330px;
+    max-width: 100%;
   }
 
   .home-photo {
+    display: block;
     width: 330px;
     max-width: 100%;
+    height: auto;
     border-radius: 6px;
   }
 
   .home-intro {
+    max-width: 620px;
+    padding-top: 1rem;
     font-size: 1rem;
     line-height: 1.6;
-    padding-top: 1rem;
-    max-width: 620px;
+  }
+
+  .home-intro p:last-child {
+    margin-bottom: 0;
   }
 
   .home-bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
     margin-top: 2rem;
+  }
+
+  .home-section {
+    min-width: 0;
   }
 
   .home-section h2 {
     margin-bottom: 1rem;
+  }
+
+  .home-section li {
+    margin-bottom: 0.3rem;
+  }
+
+  .home-section a {
+    overflow-wrap: anywhere;
   }
 
   @media (max-width: 900px) {
@@ -66,10 +86,15 @@ nav_order: 1
 
     .home-intro {
       max-width: 100%;
+      padding-top: 0;
     }
 
     .home-bottom {
       display: block;
+    }
+
+    .home-section + .home-section {
+      margin-top: 2.5rem;
     }
   }
 </style>
@@ -79,16 +104,21 @@ nav_order: 1
 <div class="home-top">
 
   <div class="home-photo-box">
-    <img class="home-photo z-depth-1" src="{{ '/assets/img/tiger.jpg' | relative_url }}" alt="tiger">
+    <img
+      class="home-photo z-depth-1"
+      src="{{ '/assets/img/tiger.jpg' | relative_url }}"
+      alt="Tiger cub"
+    >
   </div>
 
   <div class="home-intro">
     <p>
-      I am a Ph.D. student in mathematics at the University of Science and Technology of China.
+      I am a Ph.D. student in mathematics at the University of Science and Technology of China (USTC), working in differential geometry and geometric analysis.
     </p>
 
     <p>
-      My current research interests include: Scalar Curvature in Riemannian geometry (rigidity, stability, and related topological constraints); Geometric Relativity (initial data sets, positive energy, and spacetime geometry); Yang-Mills Theory and broader Gauge Theories (moduli spaces, connections, and geometric PDEs).
+      My current work focuses primarily on scalar curvature in Riemannian geometry and geometric relativity. I am particularly interested in rigidity, stability, and topological constraints under curvature conditions, as well as initial data sets, positive energy, and spacetime geometry. I am also interested in Yang–Mills theory and gauge theory, especially connections, moduli spaces, and geometric PDEs, together with problems in spectral geometry.
+    </p>
   </div>
 
 </div>
@@ -99,8 +129,10 @@ nav_order: 1
     <h2>Research Interests</h2>
 
     <ul>
-      <li>Riemannian geometry and geometric relativity</li>
-      <li>Yang--Mills equation and gauge theory</li>
+      <li>Scalar curvature and Riemannian geometry</li>
+      <li>Geometric relativity</li>
+      <li>Yang–Mills theory and gauge theory</li>
+      <li>Spectral geometry</li>
     </ul>
   </div>
 
@@ -108,11 +140,28 @@ nav_order: 1
     <h2>Contact</h2>
 
     <ul>
-      <li>Email: <a href="mailto:yjcmp@mail.ustc.edu.cn">yjcmp@mail.ustc.edu.cn</a>, <a href="mailto:youjiangchengmp@163.com">youjiangchengmp@163.com</a>, <a href="mailto:yjcmp27@gmail.com">yjcmp27@gmail.com</a></li>
-      <li>arXiv: <a href="https://arxiv.org/search/?query=Jiangcheng+You&searchtype=author">Jiangcheng You</a></li>
-      <li>ResearchGate: <a href="https://www.researchgate.net/profile/Jiangcheng-You">Jiangcheng You</a></li>
-      <li>Zhihu: <a href="https://www.zhihu.com/people/you-jiang-cheng">尤江城</a></li>
-      <li>Xiaohongshu: <a href="https://www.xiaohongshu.com/user/profile/6636fe6c0000000007004b38">尤江城</a></li>
+      <li>
+        Email:
+        <a href="mailto:yjcmp@mail.ustc.edu.cn">yjcmp@mail.ustc.edu.cn</a>,
+        <a href="mailto:youjiangchengmp@163.com">youjiangchengmp@163.com</a>,
+        <a href="mailto:yjcmp27@gmail.com">yjcmp27@gmail.com</a>
+      </li>
+      <li>
+        arXiv:
+        <a href="https://arxiv.org/search/?query=Jiangcheng+You&searchtype=author">Jiangcheng You</a>
+      </li>
+      <li>
+        ResearchGate:
+        <a href="https://www.researchgate.net/profile/Jiangcheng-You">Jiangcheng You</a>
+      </li>
+      <li>
+        Zhihu:
+        <a href="https://www.zhihu.com/people/you-jiang-cheng">尤江城</a>
+      </li>
+      <li>
+        Xiaohongshu:
+        <a href="https://www.xiaohongshu.com/user/profile/6636fe6c0000000007004b38">尤江城</a>
+      </li>
     </ul>
   </div>
 
