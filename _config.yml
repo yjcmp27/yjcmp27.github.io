@@ -92,7 +92,7 @@ analytics:
   pirsch:
   openpanel:
 
-google_site_verification:
+google_site_verification: "XsfYfpf1KU5J2OZdsd6oZwlG7H9RE3PSoUc42QJV31Y"
 bing_site_verification:
 
 # -----------------------------------------------------------------------------
@@ -388,7 +388,7 @@ lazy_loading_images: true
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_verification: false
+enable_google_verification: true
 enable_bing_verification: false
 enable_cookie_consent: false
 enable_masonry: true
