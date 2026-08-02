@@ -52,3 +52,15 @@ nav.navbar .navbar-nav .nav-link:visited,
 nav.navbar .navbar-brand {
   color: #222 !important;
 }
+
+/* Hide the "ctrl k" label while keeping the search icon */
+#search-toggle .nav-link {
+  font-size: 0 !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Restore the magnifying-glass icon size */
+#search-toggle .nav-link i {
+  font-size: 1.2rem !important;
+}
