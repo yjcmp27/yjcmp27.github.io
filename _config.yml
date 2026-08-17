@@ -308,8 +308,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
-  group_order: descending
+  group_by: none
 
 enable_publication_badges:
   altmetric: true
