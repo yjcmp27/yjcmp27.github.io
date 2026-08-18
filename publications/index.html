@@ -26,7 +26,7 @@
 
   .papers-layout {
     display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-columns: 220px minmax(0, 1fr);
     column-gap: 2.8rem;
     align-items: start;
   }
@@ -34,7 +34,19 @@
   .papers-sidebar {
     position: sticky;
     top: 5.5rem;
-    padding-top: 0.4rem;
+    padding: 1.2rem 1.1rem 1.2rem 1.3rem;
+    background: var(--global-card-bg-color);
+    border-left: 3px solid var(--global-theme-color);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .papers-sidebar-title {
+    margin-bottom: 1.1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
   }
 
   .papers-sidebar ul {
@@ -47,15 +59,24 @@
     margin-bottom: 1rem;
   }
 
+  .papers-sidebar li:last-child {
+    margin-bottom: 0;
+  }
+
   .papers-sidebar a {
+    display: block;
     color: var(--global-text-color);
     text-decoration: none;
     font-size: 0.95rem;
-    line-height: 1.4;
+    line-height: 1.45;
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
   }
 
   .papers-sidebar a:hover {
     color: var(--global-theme-color);
+    transform: translateX(4px);
   }
 
   .papers-content {
@@ -83,8 +104,15 @@
     .papers-sidebar {
       position: static;
       margin-bottom: 2.5rem;
-      padding-bottom: 1rem;
+      padding: 1rem 0;
+      background: transparent;
+      border-left: none;
       border-bottom: 1px solid var(--global-divider-color);
+      border-radius: 0;
+    }
+
+    .papers-sidebar-title {
+      margin-bottom: 0.8rem;
     }
 
     .papers-sidebar ul {
@@ -96,8 +124,12 @@
     .papers-sidebar li {
       margin-bottom: 0;
     }
+
+    .papers-sidebar a:hover {
+      transform: none;
+    }
   }
-</style> <div class="papers-layout"> <nav class="papers-sidebar" aria-label="Paper categories"> <ul> <li> <a href="#scalar-curvature"> Scalar curvature and Riemannian geometry </a> </li> <li> <a href="#geometric-relativity"> Geometric relativity </a> </li> <li> <a href="#yang-mills"> Yang–Mills theory and gauge theory </a> </li> </ul> </nav> <div class="papers-content"> <h2 id="scalar-curvature" class="paper-category-title"> Scalar curvature and Riemannian geometry </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="youzhang2026topological" class="col-sm-8"> <div class="title">Topological Rigidity of Contractible 3-Manifolds and Handlebody Interiors under Nonnegative Scalar Curvature</div> <div class="author"> <em>Jiangcheng You</em> and Heng Zhang </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2607.25015" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2607.25015" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="youzhang2026neumann" class="col-sm-8"> <div class="title">Reciprocal Sums of Neumann Eigenvalues in Non-Euclidean Space Forms</div> <div class="author"> <em>Jiangcheng You</em> and Heng Zhang </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2606.27848" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2606.27848" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="you2026ale" class="col-sm-8"> <div class="title">Curvature at Infinity of Scalar-Flat ALE Four-Manifolds</div> <div class="author"> <em>Jiangcheng You</em> </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2606.16176" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2606.16176" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> <h2 id="geometric-relativity" class="paper-category-title"> Geometric relativity </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="you2026brownyork" class="col-sm-8"> <div class="title">Intrinsic Brown–York Type Mass at Infinity in Four Dimensions</div> <div class="author"> <em>Jiangcheng You</em> </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2607.02399" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2607.02399" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="youzhang2026gromov" class="col-sm-8"> <div class="title">Gromov’s Euclidean Endpoint C^0 Rigidity for the Positive Mass Theorem</div> <div class="author"> <em>Jiangcheng You</em> and Heng Zhang </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2606.15372" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2606.15372" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> <h2 id="yang-mills" class="paper-category-title"> Yang–Mills theory and gauge theory </h2> <div class="publications"> <ol class="bibliography"></ol> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
+</style> <div class="papers-layout"> <nav class="papers-sidebar" aria-label="Paper categories"> <div class="papers-sidebar-title"> Paper categories </div> <ul> <li> <a href="#scalar-curvature"> Scalar curvature and Riemannian geometry </a> </li> <li> <a href="#geometric-relativity"> Geometric relativity </a> </li> <li> <a href="#yang-mills"> Yang–Mills theory and gauge theory </a> </li> </ul> </nav> <div class="papers-content"> <h2 id="scalar-curvature" class="paper-category-title"> Scalar curvature and Riemannian geometry </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="youzhang2026topological" class="col-sm-8"> <div class="title">Topological Rigidity of Contractible 3-Manifolds and Handlebody Interiors under Nonnegative Scalar Curvature</div> <div class="author"> <em>Jiangcheng You</em> and Heng Zhang </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2607.25015" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2607.25015" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="youzhang2026neumann" class="col-sm-8"> <div class="title">Reciprocal Sums of Neumann Eigenvalues in Non-Euclidean Space Forms</div> <div class="author"> <em>Jiangcheng You</em> and Heng Zhang </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2606.27848" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2606.27848" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="you2026ale" class="col-sm-8"> <div class="title">Curvature at Infinity of Scalar-Flat ALE Four-Manifolds</div> <div class="author"> <em>Jiangcheng You</em> </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2606.16176" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2606.16176" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> <h2 id="geometric-relativity" class="paper-category-title"> Geometric relativity </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="you2026brownyork" class="col-sm-8"> <div class="title">Intrinsic Brown–York Type Mass at Infinity in Four Dimensions</div> <div class="author"> <em>Jiangcheng You</em> </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2607.02399" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2607.02399" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="youzhang2026gromov" class="col-sm-8"> <div class="title">Gromov’s Euclidean Endpoint C^0 Rigidity for the Positive Mass Theorem</div> <div class="author"> <em>Jiangcheng You</em> and Heng Zhang </div> <div class="periodical"> <em>Preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2606.15372" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a href="https://arxiv.org/abs/2606.15372" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> <h2 id="yang-mills" class="paper-category-title"> Yang–Mills theory and gauge theory </h2> <div class="publications"> <ol class="bibliography"></ol> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
