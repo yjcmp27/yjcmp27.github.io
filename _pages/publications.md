@@ -14,7 +14,7 @@ nav_order: 2
 
   .papers-layout {
     display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-columns: 220px minmax(0, 1fr);
     column-gap: 2.8rem;
     align-items: start;
   }
@@ -22,7 +22,19 @@ nav_order: 2
   .papers-sidebar {
     position: sticky;
     top: 5.5rem;
-    padding-top: 0.4rem;
+    padding: 1.2rem 1.1rem 1.2rem 1.3rem;
+    background: var(--global-card-bg-color);
+    border-left: 3px solid var(--global-theme-color);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .papers-sidebar-title {
+    margin-bottom: 1.1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
   }
 
   .papers-sidebar ul {
@@ -35,15 +47,24 @@ nav_order: 2
     margin-bottom: 1rem;
   }
 
+  .papers-sidebar li:last-child {
+    margin-bottom: 0;
+  }
+
   .papers-sidebar a {
+    display: block;
     color: var(--global-text-color);
     text-decoration: none;
     font-size: 0.95rem;
-    line-height: 1.4;
+    line-height: 1.45;
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
   }
 
   .papers-sidebar a:hover {
     color: var(--global-theme-color);
+    transform: translateX(4px);
   }
 
   .papers-content {
@@ -71,8 +92,15 @@ nav_order: 2
     .papers-sidebar {
       position: static;
       margin-bottom: 2.5rem;
-      padding-bottom: 1rem;
+      padding: 1rem 0;
+      background: transparent;
+      border-left: none;
       border-bottom: 1px solid var(--global-divider-color);
+      border-radius: 0;
+    }
+
+    .papers-sidebar-title {
+      margin-bottom: 0.8rem;
     }
 
     .papers-sidebar ul {
@@ -84,12 +112,21 @@ nav_order: 2
     .papers-sidebar li {
       margin-bottom: 0;
     }
+
+    .papers-sidebar a:hover {
+      transform: none;
+    }
   }
 </style>
 
 <div class="papers-layout">
 
   <nav class="papers-sidebar" aria-label="Paper categories">
+
+    <div class="papers-sidebar-title">
+      Paper categories
+    </div>
+
     <ul>
       <li>
         <a href="#scalar-curvature">
@@ -109,6 +146,7 @@ nav_order: 2
         </a>
       </li>
     </ul>
+
   </nav>
 
   <div class="papers-content">
