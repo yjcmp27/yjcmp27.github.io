@@ -9,8 +9,22 @@ nav_order: 8
 
 <style>
   .poetry-intro {
-    margin-bottom: 2.5rem;
-  }
+  max-width: 850px;
+  margin-bottom: 2.8rem;
+}
+
+.poetry-quote {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.poetry-source {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  text-align: right;
+  opacity: 0.65;
+}
 
   .poetry-list {
     margin-top: 1.5rem;
@@ -77,7 +91,8 @@ nav_order: 8
 </style>
 
 <div class="poetry-intro">
-  A collection of poems I have written.
+  We don't read and write poetry because it's cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. And medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for.
+                                                              —————— from 'Dead Poets Society'.
 </div>
 
 <div class="poetry-list">
