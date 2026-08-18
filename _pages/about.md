@@ -18,6 +18,12 @@ nav_order: 1
     margin-bottom: 2.5rem;
     font-size: 2.8rem;
   }
+  .home-name-cn {
+  margin-left: 0.4rem;
+  font-size: 0.65em;
+  font-weight: 400;
+  white-space: nowrap;
+}
 
   .home-top {
     display: grid;
@@ -100,7 +106,9 @@ nav_order: 1
   }
 </style>
 
-<h1 class="home-name">Jiangcheng You</h1>
+<h1 class="home-name">
+  Jiangcheng You <span class="home-name-cn">尤江城</span>
+</h1>
 
 <div class="home-top">
 
