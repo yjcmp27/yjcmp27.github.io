@@ -8,6 +8,11 @@ nav: false
 nav_order: 1
 ---
 
+<!-- Chinese handwritten-style font for the Chinese name -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
 <style>
   .post-header {
     display: none;
@@ -19,9 +24,11 @@ nav_order: 1
     font-size: 2.8rem;
   }
 
+  /* Cute handwritten Chinese font */
   .home-name-cn {
     margin-left: 0.4rem;
-    font-size: 0.65em;
+    font-family: "ZCOOL KuaiLe", "Microsoft YaHei", "PingFang SC", sans-serif !important;
+    font-size: 0.72em;
     font-weight: 400;
     white-space: nowrap;
   }
