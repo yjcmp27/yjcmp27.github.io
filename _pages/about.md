@@ -9,29 +9,6 @@ nav_order: 1
 ---
 
 <style>
-  /* Use Comic Sans on the entire homepage */
-  body,
-  p,
-  li,
-  a,
-  span,
-  div,
-  article,
-  section,
-  main,
-  nav,
-  .navbar,
-  .navbar-brand,
-  .nav-link,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
-  }
-
   .post-header {
     display: none;
   }
