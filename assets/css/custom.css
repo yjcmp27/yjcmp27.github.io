@@ -1,10 +1,9 @@
-/* Global font override */
-html,
-body {
-  font-family: "Times New Roman", Times, serif !important;
-}
+/* =========================================================
+   Custom styles for Jiangcheng You's homepage
+   ========================================================= */
 
-/* Main text, headings, navbar, lists, links */
+/* Use Comic Sans throughout the website */
+html,
 body,
 p,
 li,
@@ -26,8 +25,13 @@ h6,
 button,
 input,
 textarea {
-  font-family: "Times New Roman", Times, serif !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
+
+
+/* =========================================================
+   Code blocks
+   ========================================================= */
 
 /* Keep code blocks readable */
 code,
@@ -36,12 +40,18 @@ kbd {
   font-family: "Courier New", Courier, monospace !important;
 }
 
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+
 /* Hide the duplicated active About item in the navbar */
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href="/homepage-test/"]),
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test/"]),
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
   display: none !important;
 }
+
 
 /* Make navbar links black instead of purple */
 nav.navbar .navbar-nav .nav-item .nav-link,
@@ -53,12 +63,18 @@ nav.navbar .navbar-brand {
   color: #222 !important;
 }
 
+
+/* =========================================================
+   Search icon
+   ========================================================= */
+
 /* Hide the "ctrl k" label while keeping the search icon */
 #search-toggle .nav-link {
   font-size: 0 !important;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
 
 /* Restore the magnifying-glass icon size */
 #search-toggle .nav-link i {
