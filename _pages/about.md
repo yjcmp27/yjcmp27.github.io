@@ -9,6 +9,29 @@ nav_order: 1
 ---
 
 <style>
+  /* Use Comic Sans on the entire homepage */
+  body,
+  p,
+  li,
+  a,
+  span,
+  div,
+  article,
+  section,
+  main,
+  nav,
+  .navbar,
+  .navbar-brand,
+  .nav-link,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  }
+
   .post-header {
     display: none;
   }
@@ -18,12 +41,13 @@ nav_order: 1
     margin-bottom: 2.5rem;
     font-size: 2.8rem;
   }
+
   .home-name-cn {
-  margin-left: 0.4rem;
-  font-size: 0.65em;
-  font-weight: 400;
-  white-space: nowrap;
-}
+    margin-left: 0.4rem;
+    font-size: 0.65em;
+    font-weight: 400;
+    white-space: nowrap;
+  }
 
   .home-top {
     display: grid;
