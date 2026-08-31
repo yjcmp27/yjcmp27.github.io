@@ -46,14 +46,44 @@ nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
 }
 
 
-/* Make navbar links black instead of purple */
-nav.navbar .navbar-nav .nav-item .nav-link,
-nav.navbar .navbar-nav .nav-item .nav-link.active,
-nav.navbar .navbar-nav .nav-item.active .nav-link,
-nav.navbar .navbar-nav .nav-link:hover,
+/* =========================================================
+   Site accent color
+   ========================================================= */
+
+:root {
+  --site-accent: #1f4e79;
+  --site-accent-hover: #163a5c;
+
+  /* al-folio theme accent */
+  --global-theme-color: var(--site-accent);
+}
+
+
+/* Main page links */
+main a,
+article a {
+  color: var(--site-accent);
+}
+
+main a:hover,
+article a:hover {
+  color: var(--site-accent-hover);
+}
+
+
+/* Navbar: keep ordinary items neutral */
+nav.navbar .navbar-nav .nav-link,
 nav.navbar .navbar-nav .nav-link:visited,
 nav.navbar .navbar-brand {
   color: #222 !important;
+}
+
+
+/* Navbar: accent only for active / hovered item */
+nav.navbar .navbar-nav .nav-link.active,
+nav.navbar .navbar-nav .nav-item.active .nav-link,
+nav.navbar .navbar-nav .nav-link:hover {
+  color: var(--site-accent) !important;
 }
 
 
