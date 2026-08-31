@@ -1,8 +1,7 @@
 /* =========================================================
-   Custom styles for Jiangcheng You's homepage
+   Global handwritten font
    ========================================================= */
 
-/* Use Comic Sans throughout the website */
 html,
 body,
 p,
@@ -30,10 +29,6 @@ textarea {
 }
 
 
-/* =========================================================
-   Code blocks
-   ========================================================= */
-
 /* Keep code blocks readable */
 code,
 pre,
@@ -42,10 +37,6 @@ samp {
   font-family: "Courier New", Courier, monospace !important;
 }
 
-
-/* =========================================================
-   Navbar
-   ========================================================= */
 
 /* Hide the duplicated active About item in the navbar */
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href="/homepage-test/"]),
@@ -65,10 +56,6 @@ nav.navbar .navbar-brand {
   color: #222 !important;
 }
 
-
-/* =========================================================
-   Search icon
-   ========================================================= */
 
 /* Hide the "ctrl k" label while keeping the search icon */
 #search-toggle .nav-link {
