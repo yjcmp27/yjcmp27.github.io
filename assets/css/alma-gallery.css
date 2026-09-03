@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
 /* ============================================
    Alma Maters
    ============================================ */
@@ -45,11 +46,14 @@
   opacity: 0.58;
 }
 
+
+
 .alma-school-name {
   display: block;
   padding-right: 2.5rem;
+  font-family: "ZCOOL KuaiLe", "Microsoft YaHei", "PingFang SC", sans-serif !important;
   font-size: 1.35rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .alma-school-arrow {
