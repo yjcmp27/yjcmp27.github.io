@@ -7,6 +7,18 @@ nav: false
 
 <link rel="stylesheet" href="{{ '/assets/css/alma-gallery.css' | relative_url }}">
 
+<!-- Chinese handwritten font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+<style>
+  .post-title {
+    font-family: "ZCOOL KuaiLe", "Microsoft YaHei", "PingFang SC", sans-serif !important;
+    font-weight: 400 !important;
+  }
+</style>
+
 <div class="alma-gallery" data-alma-gallery>
 
   <div class="alma-gallery-header">
