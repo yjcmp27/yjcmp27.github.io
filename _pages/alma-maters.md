@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Alma Maters
-description: Photos from the schools where I studied.
 permalink: /alma-maters/
 nav: true
 nav_order: 8
