@@ -18,4 +18,4 @@ nav_order: 4
 
 - **Green Functions and Rigidity under Nonnegative Scalar Curvature**  
   Geometry and Topology Seminar, Institute of Mathematics, AMSS, Chinese Academy of Sciences, September 10, 2026.  
-  [Announcement](https://amss.cas.cn/mzxsbg/202609/t20260903_8276809.html)
+  [Announcement](https://amss.cas.cn/mzxsbg/202609/t20260903_8276809.html) · [Slides]({{ '/assets/pdf/green_functions_rigidity_talk.pdf' | relative_url }})
