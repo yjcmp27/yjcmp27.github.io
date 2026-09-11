@@ -13,18 +13,18 @@ Below is a selection of papers that I have presented in seminars, together with 
 
 ## Seminar Presentations
 
-- **Biquard--Hein, *The Renormalized Volume of a 4-Dimensional Ricci-Flat ALE Space***  
+- **[Biquard--Hein, *The Renormalized Volume of a 4-Dimensional Ricci-Flat ALE Space*](https://arxiv.org/abs/1901.03647)**  
   Presented on May 2, 2026.  
   [Seminar notes]({{ '/assets/pdf/biquard_hein_renormalized_volume.pdf' | relative_url }})
 
-- **Dayaprema--Waldron, *Parabolic Gap Theorems for the Yang--Mills Energy***  
+- **[Dayaprema--Waldron, *Parabolic Gap Theorems for the Yang--Mills Energy*](https://arxiv.org/abs/2412.21050)**  
   Presented on April 10, 2026.  
   [Seminar notes]({{ '/assets/pdf/dayaprema_waldron_parabolic_gap.pdf' | relative_url }})
 
-- **Gursky--Kelleher--Streets, *A Conformally Invariant Gap Theorem in Yang--Mills Theory***  
+- **[Gursky--Kelleher--Streets, *A Conformally Invariant Gap Theorem in Yang--Mills Theory*](https://arxiv.org/abs/1708.01157)**  
   Presented on May 24, 2025.  
   [Seminar notes]({{ '/assets/pdf/gursky_kelleher_streets_gap_theorem.pdf' | relative_url }})
 
-- **Hao Yin, *On the Blow-up of Yang--Mills Fields in Dimension Four***  
+- **[Hao Yin, *On the Blow-up of Yang--Mills Fields in Dimension Four*](https://arxiv.org/abs/2303.14015)**  
   Presented on March 25, 2025.  
   [Seminar notes]({{ '/assets/pdf/hao_yin_yang_mills_blowup.pdf' | relative_url }})
