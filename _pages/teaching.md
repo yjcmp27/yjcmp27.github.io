@@ -2,7 +2,6 @@
 layout: page
 permalink: /teaching/
 title: Seminar
-description: Seminar presentations and reading notes on differential geometry, geometric analysis, and gauge theory.
 nav: true
 nav_order: 6
 ---
