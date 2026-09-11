@@ -90,6 +90,10 @@ nav_order: 1
     overflow-wrap: anywhere;
   }
 
+  .home-links {
+    margin-top: 2.5rem;
+  }
+
   @media (max-width: 900px) {
     .home-top {
       display: block;
@@ -109,6 +113,10 @@ nav_order: 1
     }
 
     .home-section + .home-section {
+      margin-top: 2.5rem;
+    }
+
+    .home-links {
       margin-top: 2.5rem;
     }
   }
@@ -185,6 +193,52 @@ nav_order: 1
     </ul>
   </div>
 
+</div>
+
+<div class="home-section home-links">
+  <h2>Useful Links</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://math.ustc.edu.cn/main.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        School of Mathematical Sciences, USTC
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://igp.ustc.edu.cn/main.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Institute of Geometry and Physics, USTC
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://math.seu.edu.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        School of Mathematics, Southeast University
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://yauc.seu.edu.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Shing-Tung Yau Center, Southeast University
+      </a>
+    </li>
+  </ul>
 </div>
 
 <script type="application/ld+json">
