@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Life and Movies
+title: Life & Movies
 permalink: /life-and-movies/
 description: Personal interests, daily life, and movies.
-nav: true
-nav_order: 7
+nav: false
 ---
 
 This page records some personal interests, daily life, and movies outside mathematics.
