@@ -9,7 +9,7 @@ nav_order: 4
 <link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}">
 
 <div class="activities-intro">
-  Academic talks and research visits.
+  Academic talks, conferences, and research visits.
 </div>
 
 <div class="activities-list">
@@ -17,6 +17,12 @@ nav_order: 4
   <a class="activities-card" href="{{ '/talks/' | relative_url }}">
     <span class="activities-type">Academic Activities</span>
     <span class="activities-name">Talks</span>
+    <span class="activities-arrow">→</span>
+  </a>
+
+  <a class="activities-card" href="{{ '/conferences/' | relative_url }}">
+    <span class="activities-type">Academic Activities</span>
+    <span class="activities-name">Conferences</span>
     <span class="activities-arrow">→</span>
   </a>
 
