@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
 
+
 /* =========================================================
    Global handwritten font
    ========================================================= */
@@ -41,7 +42,10 @@ samp {
 }
 
 
-/* Hide the duplicated active About item in the navbar */
+/* =========================================================
+   Hide duplicated About item
+   ========================================================= */
+
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href="/homepage-test/"]),
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test/"]),
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
@@ -104,7 +108,10 @@ nav.navbar .navbar-nav .nav-link:hover {
 }
 
 
-/* Small underline below homepage section headings */
+/* =========================================================
+   Homepage section headings
+   ========================================================= */
+
 .home-section h2::after {
   content: "";
   display: block;
@@ -121,35 +128,104 @@ nav.navbar .navbar-nav .nav-link:hover {
 
 html {
   min-height: 100%;
+  background: transparent !important;
 }
 
 body {
+  position: relative;
   min-height: 100vh;
+  background: transparent !important;
 
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 0.45),
-      rgba(255, 255, 255, 0.45)
-    ),
-    url("/assets/img/nebula-background.jpg")
-    center center / cover fixed no-repeat !important;
+  /*
+   * Creates a new stacking context so that the background layer
+   * remains behind all website content.
+   */
+  isolation: isolate;
 }
 
 
-/* Make the theme's page backgrounds transparent so that
-   the nebula remains visible throughout the website. */
+/*
+ * Fixed background layer for the entire website.
+ *
+ * Change 0.38 if you later want to adjust the strength:
+ *
+ * 0.50 = lighter / more washed out
+ * 0.38 = darker, recommended
+ * 0.30 = vivid
+ * 0.20 = very strong nebula colors
+ */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.38),
+      rgba(255, 255, 255, 0.38)
+    ),
+    url("/assets/img/nebula-background.jpg")
+    center center / cover no-repeat;
+}
+
+
+/* =========================================================
+   Make page content transparent
+   ========================================================= */
+
+/*
+ * al-folio normally gives several page containers their own
+ * background. These rules allow the nebula to remain visible.
+ */
+
 main,
 article,
+section,
+.page-content,
 .post,
 .post-content {
   background: transparent !important;
 }
 
 
-/* Some al-folio pages use containers around their content. */
+/*
+ * Containers inside the actual page content should also remain
+ * transparent.
+ */
+main > .container,
 main .container,
-article .container {
+article > .container,
+article .container,
+.page-content > .container,
+.page-content .container {
   background: transparent !important;
+}
+
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+
+/*
+ * Keep a very light translucent navbar so that navigation remains
+ * easy to read against the nebula.
+ */
+nav.navbar {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+footer,
+footer.fixed-bottom {
+  background: rgba(255, 255, 255, 0.82) !important;
 }
 
 
@@ -158,12 +234,16 @@ article .container {
    ========================================================= */
 
 @media (max-width: 900px) {
-  body {
+
+  body::before {
     /*
-     * Fixed backgrounds are unreliable on iOS Safari.
-     * The same image is retained, but scrolls naturally.
+     * Slightly different positioning often works better for
+     * portrait screens such as iPhone and iPad.
      */
-    background-attachment: scroll !important;
-    background-position: center center !important;
+    background-position: center center;
+  }
+
+  nav.navbar {
+    background: rgba(255, 255, 255, 0.92) !important;
   }
 }
