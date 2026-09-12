@@ -14,32 +14,6 @@ nav_order: 1
 <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 
 <style>
-  /* =========================================================
-     Homepage background
-     ========================================================= */
-
-  body {
-    background:
-      linear-gradient(
-        rgba(255, 255, 255, 0.58),
-        rgba(255, 255, 255, 0.58)
-      ),
-      url("{{ '/assets/img/nebula-background.jpg' | relative_url }}")
-      center center / cover fixed no-repeat !important;
-  }
-
-  main {
-    background: transparent !important;
-  }
-
-  /* Keep the page content itself transparent so the background
-     remains visible behind the homepage. */
-  .post,
-  .post-content,
-  .container {
-    background: transparent;
-  }
-
   .post-header {
     display: none;
   }
@@ -121,15 +95,6 @@ nav_order: 1
   }
 
   @media (max-width: 900px) {
-    body {
-      /*
-       * Fixed backgrounds can behave poorly on iPhone/iPad Safari.
-       * Use normal scrolling on smaller screens.
-       */
-      background-attachment: scroll !important;
-      background-position: center center !important;
-    }
-
     .home-top {
       display: block;
     }
