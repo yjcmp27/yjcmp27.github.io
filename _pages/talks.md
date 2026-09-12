@@ -2,10 +2,10 @@
 layout: page
 title: Talks
 permalink: /talks/
-nav: true
-nav_order: 4
+nav: false
 ---
 
+[← Back to Activities]({{ '/activities/' | relative_url }})
 
 - **Curvature at Infinity of Scalar-Flat ALE Four-Manifolds**  
   NJU--SJTU Geometric Analysis Seminar, Nanjing University, May 30, 2026.  
