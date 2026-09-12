@@ -2,11 +2,14 @@
 layout: page
 title: Alma Maters
 permalink: /alma-maters/
-nav: true
-nav_order: 8
+nav: false
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/alma-gallery.css' | relative_url }}">
+
+<div style="margin-bottom: 1.5rem;">
+  <a href="{{ '/personal/' | relative_url }}">← Back to Personal</a>
+</div>
 
 <div class="alma-intro">
   Some places that have accompanied different stages of my education.
