@@ -3,9 +3,12 @@ layout: page
 title: Poetry
 permalink: /poetry/
 description:
-nav: true
-nav_order: 8
+nav: false
 ---
+
+<div style="margin-bottom: 1.5rem;">
+  <a href="{{ '/personal/' | relative_url }}">← Back to Personal</a>
+</div>
 
 <style>
   .poetry-intro {
