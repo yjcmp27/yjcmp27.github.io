@@ -7,15 +7,15 @@ nav: false
 
 [← Back to Activities]({{ '/activities/' | relative_url }})
 
-- **Curvature at Infinity of Scalar-Flat ALE Four-Manifolds**  
-  NJU--SJTU Geometric Analysis Seminar, Nanjing University, May 30, 2026.  
-  [Announcement](https://math.nju.edu.cn/sy/xshy/20260522/i392639.html) · [Slides]({{ '/assets/pdf/curvature_at_infinty_talk.pdf' | relative_url }})
+- **Green Functions and Rigidity under Nonnegative Scalar Curvature**  
+  Geometry and Topology Seminar, Institute of Mathematics, AMSS, Chinese Academy of Sciences, September 10, 2026.  
+  [Announcement](https://amss.cas.cn/mzxsbg/202609/t20260903_8276809.html) · [Slides]({{ '/assets/pdf/green_functions_rigidity_talk.pdf' | relative_url }})
 
 - **Gromov's Euclidean Endpoint $C^0$ Rigidity for the Positive Mass Theorem**  
   Geometry and Topology Seminar, online, June 30, 2026.  
   Organized by Lizhi Chen (Lanzhou University) and Bo Zhu (YMSC, Tsinghua University).  
   [Announcement](https://geometry-topology.github.io/) · [Slides]({{ '/assets/pdf/gromov_rigidity_conjecture.pdf' | relative_url }})
 
-- **Green Functions and Rigidity under Nonnegative Scalar Curvature**  
-  Geometry and Topology Seminar, Institute of Mathematics, AMSS, Chinese Academy of Sciences, September 10, 2026.  
-  [Announcement](https://amss.cas.cn/mzxsbg/202609/t20260903_8276809.html) · [Slides]({{ '/assets/pdf/green_functions_rigidity_talk.pdf' | relative_url }})
+- **Curvature at Infinity of Scalar-Flat ALE Four-Manifolds**  
+  NJU--SJTU Geometric Analysis Seminar, Nanjing University, May 30, 2026.  
+  [Announcement](https://math.nju.edu.cn/sy/xshy/20260522/i392639.html) · [Slides]({{ '/assets/pdf/curvature_at_infinty_talk.pdf' | relative_url }})
