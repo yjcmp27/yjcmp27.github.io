@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
 /* =========================================================
    Global handwritten font
    ========================================================= */
@@ -102,6 +103,8 @@ nav.navbar .navbar-nav .nav-link:hover {
   font-size: 1.2rem !important;
 }
 
+
+/* Small underline below homepage section headings */
 .home-section h2::after {
   content: "";
   display: block;
@@ -109,4 +112,58 @@ nav.navbar .navbar-nav .nav-link:hover {
   height: 2px;
   margin-top: 0.45rem;
   background: var(--site-accent);
+}
+
+
+/* =========================================================
+   Global nebula background
+   ========================================================= */
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("/assets/img/nebula-background.jpg")
+    center center / cover fixed no-repeat !important;
+}
+
+
+/* Make the theme's page backgrounds transparent so that
+   the nebula remains visible throughout the website. */
+main,
+article,
+.post,
+.post-content {
+  background: transparent !important;
+}
+
+
+/* Some al-folio pages use containers around their content. */
+main .container,
+article .container {
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   Mobile / iPad
+   ========================================================= */
+
+@media (max-width: 900px) {
+  body {
+    /*
+     * Fixed backgrounds are unreliable on iOS Safari.
+     * The same image is retained, but scrolls naturally.
+     */
+    background-attachment: scroll !important;
+    background-position: center center !important;
+  }
 }
