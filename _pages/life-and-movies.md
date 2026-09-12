@@ -6,6 +6,8 @@ description: Personal interests, daily life, and movies.
 nav: false
 ---
 
+[← Back to Personal]({{ '/personal/' | relative_url }})
+
 This page records some personal interests, daily life, and movies outside mathematics.
 
 ## Life
