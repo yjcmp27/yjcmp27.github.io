@@ -1,27 +1,41 @@
 ---
 layout: page
-title: Life & Movies
+title: Movies
 permalink: /life-and-movies/
-description: Personal interests, daily life, and movies.
+description:
 nav: false
 ---
 
-[← Back to Personal]({{ '/personal/' | relative_url }})
+<link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}">
 
-This page records some personal interests, daily life, and movies outside mathematics.
+<div style="margin-bottom: 1.8rem;">
+  <a href="{{ '/personal/' | relative_url }}">← 返回 Personal</a>
+</div>
 
-## Life
+<div class="personal-list">
 
-Outside research, I enjoy walking, visiting bookstores and museums, taking photos, and recording ordinary moments in daily life.
+  <a class="personal-card" href="{{ '/movies/drama/' | relative_url }}">
+    <span class="personal-type">剧情片</span>
+    <span class="personal-name">我最喜欢的十部剧情片</span>
+    <span class="personal-arrow">→</span>
+  </a>
 
-I also like reading, writing, and thinking about the connections between mathematics, history, philosophy, and personal experience.
+  <a class="personal-card" href="{{ '/movies/crime-mystery/' | relative_url }}">
+    <span class="personal-type">犯罪 · 悬疑</span>
+    <span class="personal-name">我最喜欢的五部犯罪悬疑片</span>
+    <span class="personal-arrow">→</span>
+  </a>
 
-## Movies
+  <a class="personal-card" href="{{ '/movies/science-fiction/' | relative_url }}">
+    <span class="personal-type">科幻片</span>
+    <span class="personal-name">我最喜欢的五部科幻片</span>
+    <span class="personal-arrow">→</span>
+  </a>
 
-I enjoy watching films and thinking about how movies express memory, time, emotion, and human experience.
+  <a class="personal-card" href="{{ '/movies/other/' | relative_url }}">
+    <span class="personal-type">其他类型</span>
+    <span class="personal-name">其他类型中我最喜欢的五部电影</span>
+    <span class="personal-arrow">→</span>
+  </a>
 
-Some films I like may be listed here in the future.
-
-## Notes and Reflections
-
-I may use this page to collect short reflections, photos, film notes, or other informal writings.
+</div>
