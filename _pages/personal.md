@@ -15,8 +15,8 @@ nav_order: 7
 <div class="personal-list">
 
   <a class="personal-card" href="{{ '/life-and-movies/' | relative_url }}">
-    <span class="personal-type">Interests & Reflections</span>
-    <span class="personal-name">Life & Movies</span>
+    <span class="personal-type">Cinema</span>
+    <span class="personal-name">Movies</span>
     <span class="personal-arrow">→</span>
   </a>
 
