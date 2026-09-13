@@ -2,7 +2,6 @@
 layout: page
 title: 我最喜欢的五部科幻片
 permalink: /movies/science-fiction/
-description: 我最喜欢的五部科幻电影。
 nav: false
 ---
 
@@ -10,11 +9,7 @@ nav: false
   <a href="{{ '/life-and-movies/' | relative_url }}">← 返回 Movies</a>
 </div>
 
-<div class="movie-intro">
-  <p>
-    五部我尤其喜欢的科幻电影。
-  </p>
-</div>
+
 
 <div class="movie-list">
 
