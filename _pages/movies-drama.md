@@ -5,6 +5,23 @@ permalink: /movies/drama/
 nav: false
 ---
 
+<!-- Chinese font for the page title -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+<style>
+  .post-title {
+    font-family:
+      "ZCOOL KuaiLe",
+      "Microsoft YaHei",
+      "PingFang SC",
+      sans-serif !important;
+
+    font-weight: 400 !important;
+  }
+</style>
+
 <div class="movie-back">
   <a href="{{ '/life-and-movies/' | relative_url }}">← Back to Movies</a>
 </div>
