@@ -20,10 +20,14 @@
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%92%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://yjcmp27.github.io/life-and-movies/"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Jiangcheng You </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Papers </a> </li> <li class="nav-item "> <a class="nav-link" href="/notes/">Notes </a> </li> <li class="nav-item "> <a class="nav-link" href="/activities/">Activities </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Seminar </a> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">Personal </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Movies</h1> <p class="post-description"></p> </header> <article> <link rel="stylesheet" href="/assets/css/personal.css"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet"> <style>
-  /* Chinese text on the Movies directory page only */
-  .movies-index .movie-cn,
+
+  /* ========================================================
+     Chinese text on the Movies directory page only
+     ======================================================== */
+
   .movies-index .personal-type,
-  .movies-index .personal-name {
+  .movies-index .personal-name,
+  .movies-index .movies-intro {
     font-family:
       "ZCOOL KuaiLe",
       "Microsoft YaHei",
@@ -35,7 +39,31 @@
   .movies-index .personal-name {
     font-weight: 400;
   }
-</style> <div class="movies-index"> <div style="margin-bottom: 1.8rem;"> <a href="/personal/">← Back to Personal</a> </div> <div class="personal-list"> <a class="personal-card" href="/movies/drama/"> <span class="personal-type">剧情片</span> <span class="personal-name">我最喜欢的十部剧情片</span> <span class="personal-arrow">→</span> </a> <a class="personal-card" href="/movies/crime-mystery/"> <span class="personal-type">犯罪 · 悬疑</span> <span class="personal-name">我最喜欢的五部犯罪悬疑片</span> <span class="personal-arrow">→</span> </a> <a class="personal-card" href="/movies/science-fiction/"> <span class="personal-type">科幻片</span> <span class="personal-name">我最喜欢的五部科幻片</span> <span class="personal-arrow">→</span> </a> <a class="personal-card" href="/movies/other/"> <span class="personal-type">其它类型</span> <span class="personal-name">其它类型中我最喜欢的八部电影</span> <span class="personal-arrow">→</span> </a> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
+
+
+  /* ========================================================
+     Quote
+     ======================================================== */
+
+  .movies-intro {
+    max-width: 850px;
+    margin-bottom: 2.8rem;
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  .movies-quote {
+    margin: 0;
+  }
+
+  .movies-source {
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+</style> <div class="movies-index"> <div style="margin-bottom: 1.8rem;"> <a href="/personal/">← Back to Personal</a> </div> <div class="movies-intro"> <p class="movies-quote"> 电影发明以后，人类的生命至少比以前延长了三倍。 </p> <div class="movies-source"> ------ 杨德昌《一一》 </div> </div> <div class="personal-list"> <a class="personal-card" href="/movies/drama/"> <span class="personal-type">剧情片</span> <span class="personal-name">我最喜欢的十部剧情片</span> <span class="personal-arrow">→</span> </a> <a class="personal-card" href="/movies/crime-mystery/"> <span class="personal-type">犯罪 · 悬疑</span> <span class="personal-name">我最喜欢的五部犯罪悬疑片</span> <span class="personal-arrow">→</span> </a> <a class="personal-card" href="/movies/science-fiction/"> <span class="personal-type">科幻片</span> <span class="personal-name">我最喜欢的五部科幻片</span> <span class="personal-arrow">→</span> </a> <a class="personal-card" href="/movies/other/"> <span class="personal-type">其它类型</span> <span class="personal-name">其它类型中我最喜欢的八部电影</span> <span class="personal-arrow">→</span> </a> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
