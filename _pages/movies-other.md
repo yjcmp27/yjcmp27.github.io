@@ -2,7 +2,6 @@
 layout: page
 title: 其它类型中我最喜欢的八部电影
 permalink: /movies/other/
-description: 其它类型中我最喜欢的八部电影。
 nav: false
 ---
 
@@ -27,11 +26,7 @@ nav: false
   <a href="{{ '/life-and-movies/' | relative_url }}">← Back to Movies</a>
 </div>
 
-<div class="movie-intro">
-  <p>
-    八部来自不同类型、但我尤其喜欢的电影。
-  </p>
-</div>
+
 
 <div class="movie-list">
 
