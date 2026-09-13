@@ -6,7 +6,7 @@ nav: false
 ---
 
 <div class="movie-back">
-  <a href="{{ '/life-and-movies/' | relative_url }}">← 返回 Movies</a>
+  <a href="{{ '/life-and-movies/' | relative_url }}">← Back to Movies</a>
 </div>
 
 
