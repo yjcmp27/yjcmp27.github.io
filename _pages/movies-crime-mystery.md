@@ -2,7 +2,6 @@
 layout: page
 title: 我最喜欢的五部犯罪悬疑片
 permalink: /movies/crime-mystery/
-description: 我最喜欢的五部犯罪悬疑电影。
 nav: false
 ---
 
@@ -10,11 +9,7 @@ nav: false
   <a href="{{ '/life-and-movies/' | relative_url }}">← 返回 Movies</a>
 </div>
 
-<div class="movie-intro">
-  <p>
-    五部我尤其喜欢的犯罪与悬疑电影。
-  </p>
-</div>
+
 
 <div class="movie-list">
 
