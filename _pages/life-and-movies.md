@@ -35,7 +35,7 @@ nav: false
 <div class="movies-index">
 
   <div style="margin-bottom: 1.8rem;">
-    <a href="{{ '/personal/' | relative_url }}">← <span class="movie-cn">返回</span> Personal</a>
+    <a href="{{ '/personal/' | relative_url }}">← Back to Personal</a>
   </div>
 
   <div class="personal-list">
