@@ -33,9 +33,9 @@ nav: false
   </a>
 
   <a class="personal-card" href="{{ '/movies/other/' | relative_url }}">
-    <span class="personal-type">其他类型</span>
-    <span class="personal-name">其他类型中我最喜欢的五部电影</span>
-    <span class="personal-arrow">→</span>
-  </a>
+  <span class="personal-type">其它类型</span>
+  <span class="personal-name">其它类型中我最喜欢的八部电影</span>
+  <span class="personal-arrow">→</span>
+</a>
 
 </div>
