@@ -34,4 +34,4 @@ nav: false
   [Conference Page](https://www.math.tsinghua.edu.cn/info/1064/2401.htm)
 
 - **Workshop on Critical Phenomena in Problems Related to Partial Differential Equations**  
-  Changsha, China, April 19--22, 2024.
+  Central South University & Hunan University, Changsha, Hunan, China, April 19--22, 2024.
