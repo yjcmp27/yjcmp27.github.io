@@ -27,7 +27,7 @@ nav: false
   [Conference Page](https://tianyuan.xmu.edu.cn/cn/news/3685.html)
 
 - **2024 Guangzhou University Workshop on Geometric Analysis and Partial Differential Equations**  
-  Guangzhou University, Guangzhou, China, 2024.
+  Guangzhou University, Guangzhou, China, September 20--23, 2024.
 
 - **2024 Tsinghua University Workshop on Geometric Analysis**  
   Tsinghua University, Beijing, China, May 31--June 3, 2024.  
