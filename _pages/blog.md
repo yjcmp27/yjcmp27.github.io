@@ -10,53 +10,134 @@ pagination:
 ---
 
 <style>
+/* =========================================================
+   Notes page
+   ========================================================= */
+
 .notes-list {
-  margin-top: 2.2rem;
+  margin-top: 2.4rem;
 }
 
-/* spacing between notes, close to Talks */
+
+/* =========================================================
+   Individual note
+   ========================================================= */
+
+/*
+   Give each note enough breathing room and visually
+   separate neighboring entries with a subtle divider.
+*/
 .notes-list .note-item {
-  margin-bottom: 1.65rem !important;
+  margin: 0 0 1.8rem 0 !important;
+  padding: 0 0 1.65rem 0 !important;
+  border-bottom: 1px solid var(--global-divider-color);
 }
 
-/* Note title: black, same visual level as Talks title */
+/* No divider after the final note */
+.notes-list .note-item:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   Note title
+   ========================================================= */
+
+/*
+   Keep the title clear but not noticeably bold.
+   It should remain close to ordinary body text in weight.
+*/
+.notes-list .note-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .notes-list .note-title,
 .notes-list .note-title a {
-  font-size: 1rem !important;
-  line-height: 1.45 !important;
-  font-weight: 500 !important;
+  font-size: 1.02rem !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.07px currentColor;
   color: var(--global-text-color) !important;
   text-decoration: none !important;
-  margin: 0 !important;
 }
 
-/* keep title black when hovering */
+/* Keep title black when hovering */
 .notes-list .note-title a:hover {
   color: var(--global-text-color) !important;
   text-decoration: underline !important;
 }
 
-/* Note description: same size as Talks venue line, but thinner than title */
+
+/* =========================================================
+   Note description
+   ========================================================= */
+
+.notes-list .note-description {
+  margin: 0.35rem 0 0 0 !important;
+  padding: 0 !important;
+}
+
 .notes-list .note-description,
 .notes-list .note-description p,
 .notes-list .note-description strong,
 .notes-list .note-description b {
   font-size: 1rem !important;
-  line-height: 1.45 !important;
-  font-weight: 300 !important;
+  line-height: 1.55 !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.05px currentColor;
   color: var(--global-text-color) !important;
-  margin: 0.25rem 0 0 0 !important;
 }
 
-/* Note date */
+/* Remove margins inserted by Markdown inside descriptions */
+.notes-list .note-description p {
+  margin: 0 !important;
+}
+
+
+/* =========================================================
+   Note date
+   ========================================================= */
+
 .notes-list .note-date {
-  font-size: 1rem !important;
+  margin: 0.4rem 0 0 0 !important;
+  padding: 0 !important;
+  font-size: 0.94rem !important;
   line-height: 1.45 !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.03px currentColor;
   color: var(--global-text-color-light) !important;
-  margin: 0.25rem 0 0 0 !important;
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .notes-list {
+    margin-top: 2rem;
+  }
+
+  .notes-list .note-item {
+    margin-bottom: 1.55rem !important;
+    padding-bottom: 1.4rem !important;
+  }
+
+  .notes-list .note-title,
+  .notes-list .note-title a {
+    line-height: 1.45 !important;
+  }
+
+  .notes-list .note-description,
+  .notes-list .note-description p {
+    line-height: 1.5 !important;
+  }
 }
 </style>
+
 
 <div class="notes-list">
 
@@ -64,8 +145,11 @@ pagination:
 
 {% for post in sorted_posts %}
   <article class="note-item">
+
     <div class="note-title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
     </div>
 
     {% if post.description %}
@@ -87,6 +171,7 @@ pagination:
         {{ post.date | date: "%B %-d, %Y" }}
       </div>
     {% endif %}
+
   </article>
 {% endfor %}
 
