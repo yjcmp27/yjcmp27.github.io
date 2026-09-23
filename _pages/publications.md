@@ -31,7 +31,7 @@ nav_order: 2
   .papers-sidebar-title {
     margin-bottom: 1.1rem;
     font-size: 0.82rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--global-text-color-light);
