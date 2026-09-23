@@ -30,10 +30,7 @@
    Jiangcheng You — global font
    ========================================================= */
 
-/* =========================================================
-   Jiangcheng You — global font
-   ========================================================= */
-
+/* Ordinary text */
 html,
 body,
 p,
@@ -56,11 +53,20 @@ table,
 td,
 blockquote {
   font-family: "Comic Sans MS", "Comic Sans", cursive !important;
-  font-weight: 500;
-  -webkit-text-stroke: 0.12px currentColor;
+  font-weight: 400;
+  -webkit-text-stroke: 0.06px currentColor;
 }
 
-/* Slightly stronger headings */
+
+/* =========================================================
+   Headings
+   ========================================================= */
+
+/*
+   Keep headings only slightly stronger than body text.
+   Comic Sans MS does not provide very fine intermediate
+   font weights, so we keep weight 400 and use a subtle stroke.
+*/
 h1,
 h2,
 h3,
@@ -68,34 +74,75 @@ h4,
 h5,
 h6 {
   font-family: "Comic Sans MS", "Comic Sans", cursive !important;
-  font-weight: 600;
-  -webkit-text-stroke: 0.15px currentColor;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.14px currentColor;
 }
 
-/* Keep explicitly bold text clearly stronger */
+
+/* Main name / prominent page headings */
+.home-name,
+.page-title,
+.post-title,
+.post-header h1,
+.profile-name {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.16px currentColor;
+}
+
+
+/* =========================================================
+   Publications
+   ========================================================= */
+
+/*
+   Paper titles should have the same visual weight
+   as ordinary body text.
+*/
+.publications .title,
+.publications .title a,
+.bibliography .title,
+.bibliography .title a,
+.publications li .title {
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.06px currentColor;
+}
+
+
+/* Authors and journal / preprint information */
+.publications .author,
+.publications .periodical,
+.bibliography .author,
+.bibliography .periodical {
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.06px currentColor;
+}
+
+
+/* =========================================================
+   Explicit emphasis
+   ========================================================= */
+
 strong,
 b,
 th {
   font-family: "Comic Sans MS", "Comic Sans", cursive !important;
-  font-weight: 700;
-}
-
-/* Keep code and preformatted text in a monospace font */
-code,
-pre,
-kbd,
-samp {
-  font-family: monospace;
+  font-weight: 600;
   -webkit-text-stroke: 0;
 }
 
 
-/* Keep code and preformatted text in a monospace font */
+/* =========================================================
+   Code and preformatted text
+   ========================================================= */
+
 code,
 pre,
 kbd,
 samp {
   font-family: "Courier New", Courier, monospace !important;
+  font-weight: 400;
+  -webkit-text-stroke: 0;
 }
 
 
