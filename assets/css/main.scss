@@ -30,6 +30,10 @@
    Jiangcheng You — global font
    ========================================================= */
 
+/* =========================================================
+   Jiangcheng You — global font
+   ========================================================= */
+
 html,
 body,
 p,
@@ -44,21 +48,45 @@ nav,
 .navbar,
 .navbar-brand,
 .nav-link,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 button,
 input,
 textarea,
 label,
 table,
-th,
 td,
 blockquote {
-  font-family: "Comic Neue", "Comic Sans MS", "Comic Sans", "Chalkboard SE", sans-serif !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 500;
+  -webkit-text-stroke: 0.12px currentColor;
+}
+
+/* Slightly stronger headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 600;
+  -webkit-text-stroke: 0.15px currentColor;
+}
+
+/* Keep explicitly bold text clearly stronger */
+strong,
+b,
+th {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 700;
+}
+
+/* Keep code and preformatted text in a monospace font */
+code,
+pre,
+kbd,
+samp {
+  font-family: monospace;
+  -webkit-text-stroke: 0;
 }
 
 
