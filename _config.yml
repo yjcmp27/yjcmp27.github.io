@@ -12,10 +12,6 @@ icon: 💠
 
 url: "https://yjcmp27.github.io"
 baseurl: ""
-languages: ["en", "zh"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "public", "sitemap", "assets"]
-lang_from_path: true
 last_updated: false
 impressum_path:
 back_to_top: true
@@ -229,7 +225,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-  - jekyll-polyglot
   - al_folio_core
   - al_icons
   - al_folio_cv
