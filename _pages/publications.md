@@ -72,13 +72,13 @@ nav_order: 2
   }
 
   .paper-category-title {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-    scroll-margin-top: 5.5rem;
-  }
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 5.5rem;
+}
 
   .papers-content .paper-category-title:first-child {
     margin-top: 0;
