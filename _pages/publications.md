@@ -14,7 +14,7 @@ nav_order: 2
 
   .papers-layout {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-columns: 250px minmax(0, 1fr);
     column-gap: 2.8rem;
     align-items: start;
   }
@@ -145,6 +145,12 @@ nav_order: 2
           Yang–Mills theory and gauge theory
         </a>
       </li>
+
+      <li>
+        <a href="#more-topics">
+          More topics of interest, including harmonic maps, spectral geometry, etc.
+        </a>
+      </li>
     </ul>
 
   </nav>
@@ -187,6 +193,19 @@ nav_order: 2
     <div class="publications">
 
     {% bibliography --query @*[category=gauge] %}
+
+    </div>
+
+    <h2
+      id="more-topics"
+      class="paper-category-title"
+    >
+      More topics of interest, including harmonic maps, spectral geometry, etc.
+    </h2>
+
+    <div class="publications">
+
+    {% bibliography --query @*[category=other] %}
 
     </div>
 
