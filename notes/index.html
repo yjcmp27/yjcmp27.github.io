@@ -20,53 +20,133 @@
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Comic+Neue:400,400i,700,700i|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%92%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://yjcmp27.github.io/notes/"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Jiangcheng You </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Papers </a> </li> <li class="nav-item active"> <a class="nav-link" href="/notes/">Notes <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/activities/">Activities </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Seminar </a> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">Personal </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Notes</h1> <p class="post-description">Here are some notes I took during my studies. Some of them are not yet finished and are still being updated.</p> </header> <article> <style>
+/* =========================================================
+   Notes page
+   ========================================================= */
+
 .notes-list {
-  margin-top: 2.2rem;
+  margin-top: 2.4rem;
 }
 
-/* spacing between notes, close to Talks */
+
+/* =========================================================
+   Individual note
+   ========================================================= */
+
+/*
+   Give each note enough breathing room and visually
+   separate neighboring entries with a subtle divider.
+*/
 .notes-list .note-item {
-  margin-bottom: 1.65rem !important;
+  margin: 0 0 1.8rem 0 !important;
+  padding: 0 0 1.65rem 0 !important;
+  border-bottom: 1px solid var(--global-divider-color);
 }
 
-/* Note title: black, same visual level as Talks title */
+/* No divider after the final note */
+.notes-list .note-item:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   Note title
+   ========================================================= */
+
+/*
+   Keep the title clear but not noticeably bold.
+   It should remain close to ordinary body text in weight.
+*/
+.notes-list .note-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .notes-list .note-title,
 .notes-list .note-title a {
-  font-size: 1rem !important;
-  line-height: 1.45 !important;
-  font-weight: 500 !important;
+  font-size: 1.02rem !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.07px currentColor;
   color: var(--global-text-color) !important;
   text-decoration: none !important;
-  margin: 0 !important;
 }
 
-/* keep title black when hovering */
+/* Keep title black when hovering */
 .notes-list .note-title a:hover {
   color: var(--global-text-color) !important;
   text-decoration: underline !important;
 }
 
-/* Note description: same size as Talks venue line, but thinner than title */
+
+/* =========================================================
+   Note description
+   ========================================================= */
+
+.notes-list .note-description {
+  margin: 0.35rem 0 0 0 !important;
+  padding: 0 !important;
+}
+
 .notes-list .note-description,
 .notes-list .note-description p,
 .notes-list .note-description strong,
 .notes-list .note-description b {
   font-size: 1rem !important;
-  line-height: 1.45 !important;
-  font-weight: 300 !important;
+  line-height: 1.55 !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.05px currentColor;
   color: var(--global-text-color) !important;
-  margin: 0.25rem 0 0 0 !important;
 }
 
-/* Note date */
-.notes-list .note-date {
-  font-size: 1rem !important;
-  line-height: 1.45 !important;
-  font-weight: 300 !important;
-  color: var(--global-text-color-light) !important;
-  margin: 0.25rem 0 0 0 !important;
+/* Remove margins inserted by Markdown inside descriptions */
+.notes-list .note-description p {
+  margin: 0 !important;
 }
-</style> <div class="notes-list"> <article class="note-item"> <div class="note-title"> <a href="/notes/2026/yang-mills-blow-up/">Yang--Mills Blow-up Theory</a> </div> <div class="note-description"> Notes based on Uhlenbeck's papers and Yang--Mills lecture notes. </div> <div class="note-date"> July 5, 2026 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2025/geometry-of-yang-mills-moduli-space/">Geometry of Yang--Mills Moduli Space</a> </div> <div class="note-description"> Notes on the construction and geometry of Yang--Mills moduli spaces. </div> <div class="note-date"> August 21, 2025 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2025/yang-mills-theory/">Yang--Mills Theory</a> </div> <div class="note-description"> Notes on Yang--Mills theory, gauge theory, instantons, and Yang--Mills flow. </div> <div class="note-date"> June 11, 2025 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2024/complex-geometry/">Differential Geometry of Complex Vector Bundles</a> </div> <div class="note-description"> Notes on the differential geometry of complex vector bundles, Chern connections, curvature, Chern classes, and Hermitian--Yang--Mills connections. </div> <div class="note-date"> December 15, 2024 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2024/harmonic-map-and-pde/">Harmonic Map and PDE</a> </div> <div class="note-description"> Personal notes on harmonic maps, PDE techniques, variational methods, epsilon-regularity, removable singularities, energy identity, and bubble trees. </div> <div class="note-date"> October 17, 2024 </div> </article> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
+
+
+/* =========================================================
+   Note date
+   ========================================================= */
+
+.notes-list .note-date {
+  margin: 0.4rem 0 0 0 !important;
+  padding: 0 !important;
+  font-size: 0.94rem !important;
+  line-height: 1.45 !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.03px currentColor;
+  color: var(--global-text-color-light) !important;
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .notes-list {
+    margin-top: 2rem;
+  }
+
+  .notes-list .note-item {
+    margin-bottom: 1.55rem !important;
+    padding-bottom: 1.4rem !important;
+  }
+
+  .notes-list .note-title,
+  .notes-list .note-title a {
+    line-height: 1.45 !important;
+  }
+
+  .notes-list .note-description,
+  .notes-list .note-description p {
+    line-height: 1.5 !important;
+  }
+}
+</style> <div class="notes-list"> <article class="note-item"> <div class="note-title"> <a href="/notes/2026/yang-mills-blow-up/"> Yang--Mills Blow-up Theory </a> </div> <div class="note-description"> Notes based on Uhlenbeck's papers and Yang--Mills lecture notes. </div> <div class="note-date"> July 5, 2026 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2025/geometry-of-yang-mills-moduli-space/"> Geometry of Yang--Mills Moduli Space </a> </div> <div class="note-description"> Notes on the construction and geometry of Yang--Mills moduli spaces. </div> <div class="note-date"> August 21, 2025 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2025/yang-mills-theory/"> Yang--Mills Theory </a> </div> <div class="note-description"> Notes on Yang--Mills theory, gauge theory, instantons, and Yang--Mills flow. </div> <div class="note-date"> June 11, 2025 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2024/complex-geometry/"> Differential Geometry of Complex Vector Bundles </a> </div> <div class="note-description"> Notes on the differential geometry of complex vector bundles, Chern connections, curvature, Chern classes, and Hermitian--Yang--Mills connections. </div> <div class="note-date"> December 15, 2024 </div> </article> <article class="note-item"> <div class="note-title"> <a href="/notes/2024/harmonic-map-and-pde/"> Harmonic Map and PDE </a> </div> <div class="note-description"> Personal notes on harmonic maps, PDE techniques, variational methods, epsilon-regularity, removable singularities, energy identity, and bubble trees. </div> <div class="note-date"> October 17, 2024 </div> </article> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
