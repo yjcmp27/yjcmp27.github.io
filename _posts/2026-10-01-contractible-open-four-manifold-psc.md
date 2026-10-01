@@ -8,4 +8,5 @@ categories: notes
 ---
 
 A construction of a smooth contractible open four-manifold that is not homeomorphic to $\mathbb{R}^4$, but nevertheless admits a complete Riemannian metric with uniformly positive scalar curvature.
+
 [Download PDF]({{ '/assets/pdf/contractible_open_four_manifold_psc.pdf' | relative_url }})
