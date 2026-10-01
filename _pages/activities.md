@@ -3,7 +3,7 @@ layout: page
 title: Activities
 permalink: /activities/
 nav: true
-nav_order: 4
+nav_order: 6
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}">
