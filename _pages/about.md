@@ -66,12 +66,17 @@ nav_order: 1
     margin-bottom: 0;
   }
 
+  /* 统一的双栏布局容器 */
   .home-bottom {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     column-gap: clamp(3rem, 8vw, 8rem);
     align-items: start;
-    margin-top: 2rem;
+  }
+
+  /* 第二排与第三排之间的间距 */
+  .home-bottom + .home-bottom {
+    margin-top: 3rem;
   }
 
   .home-section {
@@ -88,10 +93,6 @@ nav_order: 1
 
   .home-section a {
     overflow-wrap: anywhere;
-  }
-
-  .home-links {
-    margin-top: 2.5rem;
   }
 
   @media (max-width: 900px) {
@@ -112,11 +113,11 @@ nav_order: 1
       display: block;
     }
 
-    .home-section + .home-section {
+    .home-bottom + .home-bottom {
       margin-top: 2.5rem;
     }
 
-    .home-links {
+    .home-section + .home-section {
       margin-top: 2.5rem;
     }
   }
@@ -126,6 +127,7 @@ nav_order: 1
   Jiangcheng You <span class="home-name-cn">尤江城</span>
 </h1>
 
+<!-- 第一排：照片与简介 -->
 <div class="home-top">
 
   <div class="home-photo-box">
@@ -144,11 +146,32 @@ nav_order: 1
     <p>
       My current research focuses on scalar curvature in Riemannian geometry and geometric relativity. I am particularly interested in topological constraints arising from curvature conditions, as well as mathematical interpretations of theories from general relativity. I am also interested in Yang–Mills theory and gauge theory, especially moduli spaces and geometric partial differential equations.
     </p>
+
+    <p>
+      Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs. I hope life is like "arriving with joy and returning when the joy is complete." I look forward to exchanging thoughts on mathematics and life with you.
+    </p>
   </div>
 
 </div>
 
+<!-- 第二排：学术履历与研究兴趣 -->
 <div class="home-bottom">
+
+  <div class="home-section">
+    <h2>Education &amp; Experience</h2>
+
+    <ul>
+      <li>
+        <strong>B.S. in Mathematics</strong>, Southeast University, <em>2016 – 2020</em>
+      </li>
+      <li>
+        <strong>Homebody University (家里蹲大学)</strong>, <em>2020 – 2022</em>
+      </li>
+      <li>
+        <strong>Ph.D. in Mathematics</strong>, University of Science and Technology of China (USTC), <em>2022 – Present</em>
+      </li>
+    </ul>
+  </div>
 
   <div class="home-section">
     <h2>Research Interests</h2>
@@ -157,6 +180,57 @@ nav_order: 1
       <li>Scalar curvature and Riemannian geometry</li>
       <li>Geometric relativity</li>
       <li>Yang–Mills theory and gauge theory</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- 第三排：常用链接与联系方式 -->
+<div class="home-bottom">
+
+  <div class="home-section">
+    <h2>Useful Links</h2>
+
+    <ul>
+      <li>
+        <a
+          href="https://math.ustc.edu.cn/main.htm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          School of Mathematical Sciences, USTC
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://igp.ustc.edu.cn/main.htm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Institute of Geometry and Physics, USTC
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://math.seu.edu.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          School of Mathematics, Southeast University
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://yauc.seu.edu.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shing-Tung Yau Center, Southeast University
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -195,52 +269,6 @@ nav_order: 1
 
 </div>
 
-<div class="home-section home-links">
-  <h2>Useful Links</h2>
-
-  <ul>
-    <li>
-      <a
-        href="https://math.ustc.edu.cn/main.htm"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        School of Mathematical Sciences, USTC
-      </a>
-    </li>
-
-    <li>
-      <a
-        href="https://igp.ustc.edu.cn/main.htm"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Institute of Geometry and Physics, USTC
-      </a>
-    </li>
-
-    <li>
-      <a
-        href="https://math.seu.edu.cn/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        School of Mathematics, Southeast University
-      </a>
-    </li>
-
-    <li>
-      <a
-        href="https://yauc.seu.edu.cn/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Shing-Tung Yau Center, Southeast University
-      </a>
-    </li>
-  </ul>
-</div>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -264,6 +292,17 @@ nav_order: 1
       "alternateName": "USTC",
       "url": "https://www.ustc.edu.cn/"
     },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Science and Technology of China",
+        "alternateName": "USTC"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Southeast University"
+      }
+    ],
     "knowsAbout": [
       "Differential geometry",
       "Geometric analysis",
