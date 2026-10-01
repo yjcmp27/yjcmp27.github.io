@@ -187,10 +187,10 @@ nav_order: 1
 
     <ul>
       <li>
-        <strong>B.S. in Mathematics</strong>, Southeast University, <em>2016 – 2020</em>
+        <strong>High School</strong>, Yangzhou High School, <em>2013 – 2016</em>
       </li>
       <li>
-        <strong>家里蹲</strong>, 家里蹲大学, <em>2020 – 2022</em>
+        <strong>B.S. in Mathematics</strong>, Southeast University, <em>2016 – 2020</em>
       </li>
       <li>
         <strong>Ph.D. in Mathematics</strong>, University of Science and Technology of China (USTC), <em>2022 – Present</em>
