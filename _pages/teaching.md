@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: Seminar
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 Much of the material I have presented in seminars grew out of my reading of research papers. More detailed notes on many of these topics can be found on the [Notes]({{ '/notes/' | relative_url }}) page.
