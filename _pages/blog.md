@@ -2,12 +2,15 @@
 layout: page
 title: Notes
 permalink: /notes/
-description: Here are some notes I took during my studies. Some of them are not yet finished and are still being updated.
 nav: true
 nav_order: 3
 pagination:
   enabled: false
 ---
+
+<div class="personal-intro">
+  Here are some notes I took during my studies. Some of them are not yet finished and are still being updated.
+</div>
 
 <style>
 /* =========================================================
