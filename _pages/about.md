@@ -110,6 +110,15 @@ nav_order: 1
     margin-bottom: 0;
   }
 
+  /* 底部名言单独样式 */
+  .home-footer-note .quote {
+    text-align: center;
+    margin: 1.5rem 0;          /* 上下增加一些间距，看起来更舒展 */
+    font-size: 1.25rem;        /* 稍微放大一点字号 */
+    font-family: "ZCOOL KuaiLe", "Microsoft YaHei", "PingFang SC", sans-serif !important; /* 使用你之前加载的可爱中文字体 */
+    color: #555;               /* 字体颜色稍微变淡，增加文学感 */
+  }
+
   @media (max-width: 900px) {
     .home-top {
       display: block;
@@ -181,7 +190,7 @@ nav_order: 1
         <strong>B.S. in Mathematics</strong>, Southeast University, <em>2016 – 2020</em>
       </li>
       <li>
-        <strong>Homebody University (家里蹲大学)</strong>, <em>2020 – 2022</em>
+        <strong>家里蹲大学</strong>, <em>2020 – 2022</em>
       </li>
       <li>
         <strong>Ph.D. in Mathematics</strong>, University of Science and Technology of China (USTC), <em>2022 – Present</em>
@@ -288,7 +297,13 @@ nav_order: 1
 <!-- 第四排：页面底端的个人感悟 -->
 <div class="home-footer-note">
   <p>
-    Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs. I hope life is like “乘兴而来，兴尽而返。” I look forward to exchanging thoughts on mathematics and life with you.
+    Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs.
+  </p>
+  
+  <p class="quote">“乘兴而来，兴尽而返。”</p>
+  
+  <p>
+    I look forward to exchanging thoughts on mathematics and life with you.
   </p>
 </div>
 
