@@ -95,6 +95,21 @@ nav_order: 1
     overflow-wrap: anywhere;
   }
 
+  /* 底部个人感悟的样式 */
+  .home-footer-note {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0; /* 与上方内容用淡淡的横线隔开 */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .home-footer-note p {
+    margin-bottom: 0;
+  }
+
   @media (max-width: 900px) {
     .home-top {
       display: block;
@@ -119,6 +134,11 @@ nav_order: 1
 
     .home-section + .home-section {
       margin-top: 2.5rem;
+    }
+    
+    .home-footer-note {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
     }
   }
 </style>
@@ -145,10 +165,6 @@ nav_order: 1
 
     <p>
       My current research focuses on scalar curvature in Riemannian geometry and geometric relativity. I am particularly interested in topological constraints arising from curvature conditions, as well as mathematical interpretations of theories from general relativity. I am also interested in Yang–Mills theory and gauge theory, especially moduli spaces and geometric partial differential equations.
-    </p>
-
-    <p>
-      Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs. I hope life is like "arriving with joy and returning when the joy is complete." I look forward to exchanging thoughts on mathematics and life with you.
     </p>
   </div>
 
@@ -267,6 +283,13 @@ nav_order: 1
     </ul>
   </div>
 
+</div>
+
+<!-- 第四排：页面底端的个人感悟 -->
+<div class="home-footer-note">
+  <p>
+    Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs. I hope life is like “乘兴而来，兴尽而返。” I look forward to exchanging thoughts on mathematics and life with you.
+  </p>
 </div>
 
 <script type="application/ld+json">
