@@ -190,7 +190,7 @@ nav_order: 1
         <strong>B.S. in Mathematics</strong>, Southeast University, <em>2016 – 2020</em>
       </li>
       <li>
-        <strong>家里蹲大学</strong>, <em>2020 – 2022</em>
+        <strong>家里蹲</strong>, 家里蹲大学, <em>2020 – 2022</em>
       </li>
       <li>
         <strong>Ph.D. in Mathematics</strong>, University of Science and Technology of China (USTC), <em>2022 – Present</em>
@@ -297,7 +297,7 @@ nav_order: 1
 <!-- 第四排：页面底端的个人感悟 -->
 <div class="home-footer-note">
   <p>
-    Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs.
+    Besides mathematics, I enjoy watching movies and capturing the present moment through words or photographs. I hope life follows
   </p>
   
   <p class="quote">“乘兴而来，兴尽而返。”</p>
