@@ -5,11 +5,6 @@ permalink: /movies/drama/
 nav: false
 ---
 
-<!-- 加载酷玩体 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-
 <div class="movie-back">
   <a href="{{ '/life-and-movies/' | relative_url }}">← Back to Movies</a>
 </div>
@@ -379,20 +374,6 @@ nav: false
 
 
 <style>
-
-  /* ========================================================
-     酷玩体统一应用
-     ======================================================== */
-  .movie-back,
-  .movie-back a,
-  .movie-info,
-  .movie-info h2,
-  .movie-info p,
-  .movie-original-title,
-  .movie-meta,
-  .movie-meta strong {
-    font-family: "ZCOOL KuaiLe", "Microsoft YaHei", "PingFang SC", sans-serif !important;
-  }
 
   .movie-back {
     margin-bottom: 1.8rem;
