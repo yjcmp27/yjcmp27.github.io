@@ -8,7 +8,7 @@ nav: false
 
 <link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}">
 
-<!-- Same Chinese font used on the Alma Maters page -->
+<!-- Chinese font: ZCOOL KuaiLe -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
@@ -19,9 +19,17 @@ nav: false
      Chinese text on the Movies directory page only
      ======================================================== */
 
-  
-
-  
+  .movies-index .movies-intro,
+  .movies-index .movies-quote,
+  .movies-index .movies-source,
+  .movies-index .personal-type,
+  .movies-index .personal-name {
+    font-family:
+      "ZCOOL KuaiLe",
+      "Microsoft YaHei",
+      "PingFang SC",
+      sans-serif !important;
+  }
 
 
   /* ========================================================
