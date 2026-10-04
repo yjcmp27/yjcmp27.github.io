@@ -19,20 +19,9 @@ nav: false
      Chinese text on the Movies directory page only
      ======================================================== */
 
-  .movies-index .personal-type,
-  .movies-index .personal-name,
-  .movies-index .movies-intro {
-    font-family:
-      "ZCOOL KuaiLe",
-      "Microsoft YaHei",
-      "PingFang SC",
-      sans-serif !important;
-  }
+  
 
-  /* Match the Chinese school-name weight used on Alma Maters */
-  .movies-index .personal-name {
-    font-weight: 400;
-  }
+  
 
 
   /* ========================================================
