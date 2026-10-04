@@ -33,17 +33,10 @@
    Individual note
    ========================================================= */
 
-/*
-   Give each note enough breathing room and visually
-   separate neighboring entries with a subtle divider.
-   The whole entry is now a clickable link.
-*/
 .notes-list .note-item {
-  position: relative;
   margin: 0 0 1.8rem 0 !important;
   padding: 0 0 1.65rem 0 !important;
   border-bottom: 1px solid var(--global-divider-color);
-  transition: transform 0.2s ease;
 }
 
 /* No divider after the final note */
@@ -53,70 +46,34 @@
   border-bottom: none;
 }
 
-/* Full-area clickable link */
+/* The whole entry is one clickable link */
 .notes-list .note-link {
   display: block;
   color: inherit !important;
   text-decoration: none !important;
-  cursor: pointer;
-}
-
-/* Hover feedback: whole entry shifts slightly to the right */
-.notes-list .note-item:hover {
-  transform: translateX(4px);
-}
-
-/* Title changes colour on hover so the whole entry reads as one link */
-.notes-list .note-item:hover .note-title {
-  color: var(--global-theme-color) !important;
-  text-decoration: underline !important;
 }
 
 
 /* =========================================================
-   "Read more" arrow that appears on hover
+   Note title —— the visible "this is a link" signal
    ========================================================= */
 
-.notes-list .note-arrow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  color: var(--global-theme-color);
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  pointer-events: none;
-}
-
-.notes-list .note-item:hover .note-arrow {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
-/* =========================================================
-   Note title
-   ========================================================= */
-
-/*
-   Keep the title clear but not noticeably bold.
-   It should remain close to ordinary body text in weight.
-*/
 .notes-list .note-title {
   margin: 0 !important;
   padding: 0 !important;
-  padding-right: 1.6rem !important; /* leave room for the arrow */
-  transition: color 0.2s ease;
-}
-
-.notes-list .note-title {
   font-size: 1.02rem !important;
   line-height: 1.5 !important;
   font-weight: 400 !important;
   -webkit-text-stroke: 0.07px currentColor;
-  color: var(--global-text-color) !important;
+  /* Link colour + underline: unmistakably clickable */
+  color: var(--global-theme-color) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+/* Slightly darker on hover */
+.notes-list .note-link:hover .note-title {
+  color: var(--global-hover-color, var(--global-theme-color)) !important;
 }
 
 
@@ -140,7 +97,6 @@
   color: var(--global-text-color) !important;
 }
 
-/* Remove margins inserted by Markdown inside descriptions */
 .notes-list .note-description p {
   margin: 0 !important;
 }
@@ -183,13 +139,8 @@
   .notes-list .note-description p {
     line-height: 1.5 !important;
   }
-
-  /* Disable the hover shift on touch devices */
-  .notes-list .note-item:hover {
-    transform: none;
-  }
 }
-</style> <div class="notes-list"> <article class="note-item"> <a href="/notes/2026/contractible-open-four-manifold-psc/" class="note-link"> <div class="note-title"> A Contractible Open Four-Manifold with Uniformly Positive Scalar Curvature </div> <div class="note-description"> A construction of a contractible open four-manifold, not homeomorphic to R^4, admitting a complete metric with uniformly positive scalar curvature. </div> <div class="note-date"> October 1, 2026 </div> </a> <span class="note-arrow">→</span> </article> <article class="note-item"> <a href="/notes/2026/yang-mills-blow-up/" class="note-link"> <div class="note-title"> Yang--Mills Blow-up Theory </div> <div class="note-description"> Notes based on Uhlenbeck's papers and Yang--Mills lecture notes. </div> <div class="note-date"> July 5, 2026 </div> </a> <span class="note-arrow">→</span> </article> <article class="note-item"> <a href="/notes/2025/geometry-of-yang-mills-moduli-space/" class="note-link"> <div class="note-title"> Geometry of Yang--Mills Moduli Space </div> <div class="note-description"> Notes on the construction and geometry of Yang--Mills moduli spaces. </div> <div class="note-date"> August 21, 2025 </div> </a> <span class="note-arrow">→</span> </article> <article class="note-item"> <a href="/notes/2025/yang-mills-theory/" class="note-link"> <div class="note-title"> Yang--Mills Theory </div> <div class="note-description"> Notes on Yang--Mills theory, gauge theory, instantons, and Yang--Mills flow. </div> <div class="note-date"> June 11, 2025 </div> </a> <span class="note-arrow">→</span> </article> <article class="note-item"> <a href="/notes/2024/complex-geometry/" class="note-link"> <div class="note-title"> Differential Geometry of Complex Vector Bundles </div> <div class="note-description"> Notes on the differential geometry of complex vector bundles, Chern connections, curvature, Chern classes, and Hermitian--Yang--Mills connections. </div> <div class="note-date"> December 15, 2024 </div> </a> <span class="note-arrow">→</span> </article> <article class="note-item"> <a href="/notes/2024/harmonic-map-and-pde/" class="note-link"> <div class="note-title"> Harmonic Map and PDE </div> <div class="note-description"> Personal notes on harmonic maps, PDE techniques, variational methods, epsilon-regularity, removable singularities, energy identity, and bubble trees. </div> <div class="note-date"> October 17, 2024 </div> </a> <span class="note-arrow">→</span> </article> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
+</style> <div class="notes-list"> <article class="note-item"> <a href="/notes/2026/contractible-open-four-manifold-psc/" class="note-link"> <div class="note-title"> A Contractible Open Four-Manifold with Uniformly Positive Scalar Curvature </div> <div class="note-description"> A construction of a contractible open four-manifold, not homeomorphic to R^4, admitting a complete metric with uniformly positive scalar curvature. </div> <div class="note-date"> October 1, 2026 </div> </a> </article> <article class="note-item"> <a href="/notes/2026/yang-mills-blow-up/" class="note-link"> <div class="note-title"> Yang--Mills Blow-up Theory </div> <div class="note-description"> Notes based on Uhlenbeck's papers and Yang--Mills lecture notes. </div> <div class="note-date"> July 5, 2026 </div> </a> </article> <article class="note-item"> <a href="/notes/2025/geometry-of-yang-mills-moduli-space/" class="note-link"> <div class="note-title"> Geometry of Yang--Mills Moduli Space </div> <div class="note-description"> Notes on the construction and geometry of Yang--Mills moduli spaces. </div> <div class="note-date"> August 21, 2025 </div> </a> </article> <article class="note-item"> <a href="/notes/2025/yang-mills-theory/" class="note-link"> <div class="note-title"> Yang--Mills Theory </div> <div class="note-description"> Notes on Yang--Mills theory, gauge theory, instantons, and Yang--Mills flow. </div> <div class="note-date"> June 11, 2025 </div> </a> </article> <article class="note-item"> <a href="/notes/2024/complex-geometry/" class="note-link"> <div class="note-title"> Differential Geometry of Complex Vector Bundles </div> <div class="note-description"> Notes on the differential geometry of complex vector bundles, Chern connections, curvature, Chern classes, and Hermitian--Yang--Mills connections. </div> <div class="note-date"> December 15, 2024 </div> </a> </article> <article class="note-item"> <a href="/notes/2024/harmonic-map-and-pde/" class="note-link"> <div class="note-title"> Harmonic Map and PDE </div> <div class="note-description"> Personal notes on harmonic maps, PDE techniques, variational methods, epsilon-regularity, removable singularities, energy identity, and bubble trees. </div> <div class="note-date"> October 17, 2024 </div> </a> </article> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jiangcheng You. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
