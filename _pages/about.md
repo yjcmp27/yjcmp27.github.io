@@ -176,9 +176,8 @@ nav_order: 1
       My current research focuses on scalar curvature in Riemannian geometry and geometric relativity. I am particularly interested in topological constraints arising from curvature conditions, as well as mathematical interpretations of theories from general relativity. I am also interested in Yang–Mills theory and gauge theory, especially moduli spaces and geometric partial differential equations.
     </p>
 
-    <!-- 新增的 CV 链接与说明部分（已修改文字，去掉了 (PDF)） -->
     <p>
-      For a detailed overview of my academic background, publications, and talks, you can download my full CV here: <a href="{{ '/assets/pdf/Jiangcheng_You_CV.pdf' | relative_url }}" target="_blank"><strong>Curriculum Vitae</strong></a>.
+  For a detailed overview of my academic background, publications, and talks, you can download my full CV here: <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank"><strong>Curriculum Vitae</strong></a>.
     </p>
   </div>
 
