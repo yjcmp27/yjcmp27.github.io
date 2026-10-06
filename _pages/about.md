@@ -177,7 +177,7 @@ nav_order: 1
     </p>
 
     <p>
-  For a brief overview of my academic background, publications, and talks, you can download my full CV here: <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank"><strong>Curriculum Vitae</strong></a>.
+     My full CV: <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank"><strong>Curriculum Vitae</strong></a>.
     </p>
   </div>
 
