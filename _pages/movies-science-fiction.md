@@ -11,26 +11,13 @@ nav: false
 <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 
 <style>
-  /* ========================================================
-     酷玩体：应用到页面标题与全部正文
-     ======================================================== */
-  .post-title,
-  .movie-back,
-  .movie-back a,
-  .movie-info,
-  .movie-info h2,
-  .movie-info p,
-  .movie-original-title,
-  .movie-meta,
-  .movie-meta strong {
+    .post-title,
+  h1.post-title {
     font-family:
       "ZCOOL KuaiLe",
       "Microsoft YaHei",
       "PingFang SC",
       sans-serif !important;
-  }
-
-  .post-title {
     font-weight: 400 !important;
   }
 </style>
