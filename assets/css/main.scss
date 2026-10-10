@@ -28,32 +28,17 @@
 
 
 /* =========================================================
-   Jiangcheng You — global typography
-   English: Helvetica
-   Chinese: Source Han Serif / Noto Serif SC
+   Jiangcheng You — global font
    ========================================================= */
 
-:root {
-  --site-font:
-    Helvetica,
-    "Helvetica Neue",
-    Arial,
-    "Source Han Serif SC",
-    "Source Han Serif CN",
-    "Noto Serif SC",
-    sans-serif;
-}
-
-
-/* =========================================================
-   Ordinary text
-   ========================================================= */
-
+/* Ordinary text */
 html,
 body,
 p,
 li,
 a,
+span,
+div,
 article,
 section,
 main,
@@ -68,9 +53,9 @@ label,
 table,
 td,
 blockquote {
-  font-family: var(--site-font) !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
   font-weight: 400;
-  -webkit-text-stroke: 0 !important;
+  -webkit-text-stroke: 0.06px currentColor;
 }
 
 
@@ -79,32 +64,31 @@ blockquote {
    ========================================================= */
 
 /*
-   Headings are slightly bolder than ordinary body text.
-   No artificial stroke is applied.
+   Keep headings only slightly stronger than body text.
+   Comic Sans MS does not provide very fine intermediate
+   font weights, so we keep weight 400 and use a subtle stroke.
 */
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--site-font) !important;
-  font-weight: 600 !important;
-  -webkit-text-stroke: 0 !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.14px currentColor;
 }
 
 
 /* Main name / prominent page headings */
-
 .home-name,
 .page-title,
 .post-title,
 .post-header h1,
 .profile-name {
-  font-family: var(--site-font) !important;
-  font-weight: 600 !important;
-  -webkit-text-stroke: 0 !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0.16px currentColor;
 }
 
 
@@ -116,27 +100,23 @@ h6 {
    Paper titles should have the same visual weight
    as ordinary body text.
 */
-
 .publications .title,
 .publications .title a,
 .bibliography .title,
 .bibliography .title a,
 .publications li .title {
-  font-family: var(--site-font) !important;
   font-weight: 400 !important;
-  -webkit-text-stroke: 0 !important;
+  -webkit-text-stroke: 0.06px currentColor;
 }
 
 
 /* Authors and journal / preprint information */
-
 .publications .author,
 .publications .periodical,
 .bibliography .author,
 .bibliography .periodical {
-  font-family: var(--site-font) !important;
   font-weight: 400 !important;
-  -webkit-text-stroke: 0 !important;
+  -webkit-text-stroke: 0.06px currentColor;
 }
 
 
@@ -147,9 +127,9 @@ h6 {
 strong,
 b,
 th {
-  font-family: var(--site-font) !important;
-  font-weight: 700 !important;
-  -webkit-text-stroke: 0 !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 600;
+  -webkit-text-stroke: 0;
 }
 
 
@@ -161,10 +141,9 @@ code,
 pre,
 kbd,
 samp {
-  font-family:
-    "Courier New", Courier, monospace !important;
+  font-family: "Courier New", Courier, monospace !important;
   font-weight: 400;
-  -webkit-text-stroke: 0 !important;
+  -webkit-text-stroke: 0;
 }
 
 
@@ -173,7 +152,6 @@ samp {
    ========================================================= */
 
 /* Hide the duplicated active About item in the navbar */
-
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href="/homepage-test/"]),
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test/"]),
 nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
@@ -182,7 +160,6 @@ nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
 
 
 /* Make navbar links black instead of purple */
-
 nav.navbar .navbar-nav .nav-item .nav-link,
 nav.navbar .navbar-nav .nav-item .nav-link.active,
 nav.navbar .navbar-nav .nav-item.active .nav-link,
@@ -198,7 +175,6 @@ nav.navbar .navbar-brand {
    ========================================================= */
 
 /* Hide the "ctrl k" label while keeping the search icon */
-
 #search-toggle .nav-link {
   font-size: 0 !important;
   padding-left: 0.5rem;
@@ -207,7 +183,6 @@ nav.navbar .navbar-brand {
 
 
 /* Restore the magnifying-glass icon size */
-
 #search-toggle .nav-link i {
   font-size: 1.2rem !important;
 }
