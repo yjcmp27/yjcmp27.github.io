@@ -1,0 +1,213 @@
+
+---
+---
+
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+
+@use "themes";
+@use "layout";
+
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+
+/* =========================================================
+   Jiangcheng You — global typography
+   English: Helvetica
+   Chinese: Source Han Serif / Noto Serif SC
+   ========================================================= */
+
+:root {
+  --site-font:
+    Helvetica,
+    "Helvetica Neue",
+    Arial,
+    "Source Han Serif SC",
+    "Source Han Serif CN",
+    "Noto Serif SC",
+    sans-serif;
+}
+
+
+/* =========================================================
+   Ordinary text
+   ========================================================= */
+
+html,
+body,
+p,
+li,
+a,
+article,
+section,
+main,
+nav,
+.navbar,
+.navbar-brand,
+.nav-link,
+button,
+input,
+textarea,
+label,
+table,
+td,
+blockquote {
+  font-family: var(--site-font) !important;
+  font-weight: 400;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* =========================================================
+   Headings
+   ========================================================= */
+
+/*
+   Headings are slightly bolder than ordinary body text.
+   No artificial stroke is applied.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--site-font) !important;
+  font-weight: 600 !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* Main name / prominent page headings */
+
+.home-name,
+.page-title,
+.post-title,
+.post-header h1,
+.profile-name {
+  font-family: var(--site-font) !important;
+  font-weight: 600 !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* =========================================================
+   Publications
+   ========================================================= */
+
+/*
+   Paper titles should have the same visual weight
+   as ordinary body text.
+*/
+
+.publications .title,
+.publications .title a,
+.bibliography .title,
+.bibliography .title a,
+.publications li .title {
+  font-family: var(--site-font) !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* Authors and journal / preprint information */
+
+.publications .author,
+.publications .periodical,
+.bibliography .author,
+.bibliography .periodical {
+  font-family: var(--site-font) !important;
+  font-weight: 400 !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* =========================================================
+   Explicit emphasis
+   ========================================================= */
+
+strong,
+b,
+th {
+  font-family: var(--site-font) !important;
+  font-weight: 700 !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* =========================================================
+   Code and preformatted text
+   ========================================================= */
+
+code,
+pre,
+kbd,
+samp {
+  font-family:
+    "Courier New", Courier, monospace !important;
+  font-weight: 400;
+  -webkit-text-stroke: 0 !important;
+}
+
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+
+/* Hide the duplicated active About item in the navbar */
+
+nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href="/homepage-test/"]),
+nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test/"]),
+nav.navbar .navbar-nav > .nav-item:nth-child(2):has(a[href$="/homepage-test"]) {
+  display: none !important;
+}
+
+
+/* Make navbar links black instead of purple */
+
+nav.navbar .navbar-nav .nav-item .nav-link,
+nav.navbar .navbar-nav .nav-item .nav-link.active,
+nav.navbar .navbar-nav .nav-item.active .nav-link,
+nav.navbar .navbar-nav .nav-link:hover,
+nav.navbar .navbar-nav .nav-link:visited,
+nav.navbar .navbar-brand {
+  color: #222 !important;
+}
+
+
+/* =========================================================
+   Search icon
+   ========================================================= */
+
+/* Hide the "ctrl k" label while keeping the search icon */
+
+#search-toggle .nav-link {
+  font-size: 0 !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+/* Restore the magnifying-glass icon size */
+
+#search-toggle .nav-link i {
+  font-size: 1.2rem !important;
+}
