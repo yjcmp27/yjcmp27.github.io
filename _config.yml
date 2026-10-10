@@ -6,9 +6,9 @@ description: Academic homepage of Jiangcheng You, a Ph.D. student at the Univers
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
-keywords: Jiangcheng You, You Jiangcheng, 尤江城, differential geometry, geometric analysis, scalar curvature, geometric relativity, gauge theory, USTC
+keywords: Jiangcheng You, You Jiangcheng, 灏ゆ睙鍩?, differential geometry, geometric analysis, scalar curvature, geometric relativity, gauge theory, USTC
 lang: en
-icon: 💠
+icon: 馃挔
 
 url: "https://yjcmp27.github.io"
 baseurl: ""
@@ -466,7 +466,7 @@ third_party_libraries:
 
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Comic+Neue:400,400i,700,700i|Noto+Serif+SC:400,500,600,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Comic+Neue:400,400i,700,700i|Material+Icons&display=swap"
 
   highlightjs:
     integrity:
