@@ -212,3 +212,22 @@ nav_order: 2
   </div>
 
 </div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const paper = document.getElementById("youzhang2026drawstrings");
+
+    if (paper) {
+      const link = paper.querySelector(
+        '.links a[href="https://hexagonmath.org/2610.00435v1"]'
+      );
+
+      if (link) {
+        link.textContent = "HEXAGON";
+        link.setAttribute("aria-label", "HEXAGON preprint");
+      }
+    }
+  });
+</script>
+
