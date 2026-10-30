@@ -221,6 +221,34 @@ nav_order: 1
     <h2>Useful Links</h2>
 
     <ul>
+    <li>
+        <a
+          href="https://www.yzzx.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Yangzhou High school
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://math.seu.edu.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          School of Mathematics, Southeast University
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://yauc.seu.edu.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shing-Tung Yau Center, Southeast University
+        </a>
+      </li>
       <li>
         <a
           href="https://math.ustc.edu.cn/main.htm"
@@ -241,25 +269,7 @@ nav_order: 1
         </a>
       </li>
 
-      <li>
-        <a
-          href="https://math.seu.edu.cn/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          School of Mathematics, Southeast University
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="https://yauc.seu.edu.cn/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Shing-Tung Yau Center, Southeast University
-        </a>
-      </li>
+      
     </ul>
   </div>
 
